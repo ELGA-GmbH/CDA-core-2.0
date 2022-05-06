@@ -466,7 +466,8 @@
     <element id="Act.entryRelationship.contextConductionInd">
       <path value="Act.entryRelationship.contextConductionInd"/>
       <representation value="xmlAttr"/>
-      <min value="1"/>
+      <!-- ELGA changed value to 0 as attribute is optional -->
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="boolean"/>
