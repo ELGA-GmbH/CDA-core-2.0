@@ -85,8 +85,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <!-- ELGA POCD_MT000040.InfrastructureRoot.typeId enhances II in that way that root and extension are required -->
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <!-- ELGA POCD_MT000040.InfrastructureRoot.typeId -->
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/InfrastructureRoot-typeId"/>
       </type>
     </element>
     <element id="Act.templateId">
@@ -241,8 +241,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <!-- ELGA POCD_MT000040.InfrastructureRoot.typeId enhances II in that way that root and extension are required -->
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <!-- ELGA POCD_MT000040.InfrastructureRoot.typeId -->
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/InfrastructureRoot-typeId"/>
       </type>
     </element>
     <!-- ELGA Act.subject.templateId TODO push to upstream-->
@@ -376,8 +376,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <!-- ELGA POCD_MT000040.InfrastructureRoot.typeId enhances II in that way that root and extension are required -->
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <!-- ELGA POCD_MT000040.InfrastructureRoot.typeId -->
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/InfrastructureRoot-typeId"/>
       </type>
     </element>
     <!-- ELGA Act.informant.templateId TODO push to upstream-->
@@ -498,8 +498,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <!-- ELGA POCD_MT000040.InfrastructureRoot.typeId enhances II in that way that root and extension are required -->
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <!-- ELGA POCD_MT000040.InfrastructureRoot.typeId -->
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/InfrastructureRoot-typeId"/>
       </type>
     </element>
     <!-- ELGA Act.entryRelationship.templateId TODO push to upstream-->
@@ -655,8 +655,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <!-- ELGA POCD_MT000040.InfrastructureRoot.typeId enhances II in that way that root and extension are required -->
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <!-- ELGA POCD_MT000040.InfrastructureRoot.typeId -->
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/InfrastructureRoot-typeId"/>
       </type>
     </element>
     <!-- ELGA Act.reference.templateId TODO push to upstream-->

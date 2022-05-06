@@ -123,6 +123,7 @@ This FHIR Implementation Guide represents CDA using the FHIR Type Definition Fra
 				<li><a href="StructureDefinition-TEL.html">TEL: TelecommunicationAddress</a></li>
 				<li><a href="StructureDefinition-TS.html">TS: PointInTime</a></li>
 				<li><a href="StructureDefinition-TN.html">TN: TrivialName</a></li>
+				<li><a href="StructureDefinition-InfrastructureRoot-typeId.html">typeId</a></li>
 			</ul>
 		</td>
 	</tr>

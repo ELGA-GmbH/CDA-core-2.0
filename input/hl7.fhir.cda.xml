@@ -277,6 +277,11 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="StructureDefinition/InfrastructureRoot-typeId" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="StructureDefinition/InFulfillmentOf" />
 			</reference>
 		</resource>
