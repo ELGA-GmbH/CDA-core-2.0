@@ -467,6 +467,11 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="StructureDefinition/Precondition2" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="StructureDefinition/Procedure" />
 			</reference>
 		</resource>

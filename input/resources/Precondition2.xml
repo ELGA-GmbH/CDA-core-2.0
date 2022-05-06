@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Precondition2"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>The precondition class, derived from the ActRelationship class, is used along with the Precondition class to express a condition that must hold true before some over activity occurs.</p>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+    <valueUri value="urn:hl7-org:sdtc"/>
+  </extension>
+  <url value="http://hl7.org/fhir/cda/StructureDefinition/Precondition2"/>
+  <name value="Precondition2"/>
+  <title value="Precondition2 (CDA Class)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7"/>
+  <description value="The precondition class, derived from the ActRelationship class, is used along with the Precondition class to express a condition that must hold true before some over activity occurs."/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="Precondition2"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <differential>
+    <element id="Precondition2">
+      <path value="Precondition2"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Precondition2.typeCode">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:v3"/>
+      </extension>
+      <path value="Precondition2.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <fixedCode value="PRCN" />
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActRelationshipType"/>
+      </binding>
+    </element>
+    <element id="Precondition2.stdcRealmCode">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="realmCode"/>
+      </extension>
+      <path value="Precondition2.stdcRealmCode"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="Precondition2.stdcTypeId">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="typeId"/>
+      </extension>
+      <path value="Precondition2.stdcTypeId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <!-- ELGA POCD_MT000040.InfrastructureRoot.typeId -->
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/InfrastructureRoot-typeId"/>
+      </type>
+    </element>
+    <element id="Precondition2.sdtcTemplateId">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="templateId"/>
+      </extension>
+      <path value="Precondition2.sdtcTemplateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="Precondition2.sdtcActReference">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="actReference"/>
+      </extension>
+      <path value="Precondition2.sdtcActReference"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="Precondition2.sdtcActReference.classCode">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:v3"/>
+      </extension>
+      <path value="Precondition2.sdtcActReference.classCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <!-- TODO -->
+  </differential>
+</StructureDefinition>
