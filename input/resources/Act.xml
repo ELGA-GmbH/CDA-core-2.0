@@ -528,6 +528,22 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
       </type>
     </element>
+    <element id="Act.entryRelationship.act">
+      <path value="Act.entryRelationship.act"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Act"/>
+      </type>
+    </element>
+    <element id="Act.entryRelationship.encounter">
+      <path value="Act.entryRelationship.encounter"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Encounter"/>
+      </type>
+    </element>
     <element id="Act.entryRelationship.observation">
       <path value="Act.entryRelationship.observation"/>
       <min value="0"/>
@@ -536,20 +552,36 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Observation"/>
       </type>
     </element>
-    <element id="Act.entryRelationship.regionOfInterest">
-      <path value="Act.entryRelationship.regionOfInterest"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/RegionOfInterest"/>
-      </type>
-    </element>
     <element id="Act.entryRelationship.observationMedia">
       <path value="Act.entryRelationship.observationMedia"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ObservationMedia"/>
+      </type>
+    </element>
+    <element id="Act.entryRelationship.organizer">
+      <path value="Act.entryRelationship.organizer"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Organizer"/>
+      </type>
+    </element>
+    <element id="Act.entryRelationship.procedure">
+      <path value="Act.entryRelationship.procedure"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Procedure"/>
+      </type>
+    </element>
+    <element id="Act.entryRelationship.regionOfInterest">
+      <path value="Act.entryRelationship.regionOfInterest"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/RegionOfInterest"/>
       </type>
     </element>
     <element id="Act.entryRelationship.substanceAdministration">
@@ -566,38 +598,6 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Supply"/>
-      </type>
-    </element>
-    <element id="Act.entryRelationship.procedure">
-      <path value="Act.entryRelationship.procedure"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Procedure"/>
-      </type>
-    </element>
-    <element id="Act.entryRelationship.encounter">
-      <path value="Act.entryRelationship.encounter"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Encounter"/>
-      </type>
-    </element>
-    <element id="Act.entryRelationship.organizer">
-      <path value="Act.entryRelationship.organizer"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Organizer"/>
-      </type>
-    </element>
-    <element id="Act.entryRelationship.act">
-      <path value="Act.entryRelationship.act"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Act"/>
       </type>
     </element>
     <element id="Act.reference">
