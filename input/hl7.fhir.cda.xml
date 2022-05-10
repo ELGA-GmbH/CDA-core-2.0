@@ -287,6 +287,11 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="StructureDefinition/InFulfillmentOf1" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="StructureDefinition/INT" />
 			</reference>
 		</resource>
@@ -468,6 +473,11 @@
 		<resource>
 			<reference>
 				<reference value="StructureDefinition/Precondition2" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/Precondition2-SubType" />
 			</reference>
 		</resource>
 		<resource>

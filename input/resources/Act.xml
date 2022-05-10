@@ -732,8 +732,8 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Precondition2"/>
       </type>
     </element>
-     <!-- ELGA sdtc:inFulfillmentOf1 TODO push to upstream -->
-    <!-- <element id="Act.sdtcInFulfillmentOf1">
+    <!-- ELGA sdtc:inFulfillmentOf1 TODO push to upstream -->
+    <element id="Act.sdtcInFulfillmentOf1">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
@@ -746,6 +746,6 @@
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/InFulfillmentOf1"/>
       </type>
-    </element> -->
+    </element>
   </differential>
 </StructureDefinition>
