@@ -30,7 +30,7 @@
       <constraint>
         <key value="act-er-1"/>
         <severity value="error"/>
-        <human value="Only one of observation, regionOfInterest, observationMedia, substanceAdministration, supply, procedure, encounter, organizer, and act"/>
+        <human value="Only one of sdtcAllTrue, sdtcAllFalse, sdtcAtLeastOneTrue, sdtcAtLeastOneFalse, sdtcOnlyOneTrue, sdtcOnlyOneFalse, and sdtcCriterion"/>
         <expression value="(sdtcAllTrue | sdtcAllFalse | sdtcAtLeastOneTrue | sdtcAtLeastOneFalse | sdtcOnlyOneTrue | sdtcOnlyOneFalse | sdtcCriterion).count() = 1"/>
         <source value=""/>
       </constraint>
@@ -135,7 +135,7 @@
       </extension>
       <path value="Precondition2.sdtcAllTrue"/>
       <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Precondition2-SubType"/>
@@ -146,134 +146,89 @@
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
-        <valueString value="allTrue"/>
+        <valueString value="allFalse"/>
       </extension>
       <path value="Precondition2.sdtcAllFalse"/>
       <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="Element"/>
-      </type>
-    </element>
-    <element id="Precondition2.sdtcAllFalse.nullFlavor">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-        <valueUri value="urn:hl7-org:v3"/>
-      </extension>
-      <path value="Precondition2.sdtcAllFalse.nullFlavor"/>
-      <representation value="xmlAttr"/>
-      <label value="Exceptional Value Detail"/>
-      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
-      </binding>
-    </element>
-    <element id="Precondition2.sdtcAllFalse.classCode">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-        <valueUri value="urn:hl7-org:v3"/>
-      </extension>
-      <path value="Precondition2.sdtcAllFalse.classCode"/>
-      <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="code"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Precondition2-SubType"/>
       </type>
-      <fixedCode value="CLUSTER" />
     </element>
-    <element id="Precondition2.sdtcAllFalse.moodCode">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-        <valueUri value="urn:hl7-org:v3"/>
-      </extension>
-      <path value="Precondition2.sdtcAllFalse.moodCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="EVN" />
-    </element>
-    <element id="Precondition2.sdtcAllFalse.sdtcRealmCode">
+    <element id="Precondition2.sdtcAtLeastOneFalse">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
-        <valueString value="realmCode"/>
+        <valueString value="atLeastOneFalse"/>
       </extension>
-      <path value="Precondition2.sdtcAllFalse.sdtcRealmCode"/>
+      <path value="Precondition2.sdtcAtLeastOneFalse"/>
       <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
-      </type>
-    </element>
-    <element id="Precondition2.sdtcAllFalse.sdtcTypeId">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-        <valueUri value="urn:hl7-org:sdtc"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
-        <valueString value="typeId"/>
-      </extension>
-      <path value="Precondition2.sdtcAllFalse.sdtcTypeId"/>
-      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <!-- ELGA POCD_MT000040.InfrastructureRoot.typeId -->
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/InfrastructureRoot-typeId"/>
-      </type>
-    </element>
-    <element id="Precondition2.sdtcAllFalse.sdtcTemplateId">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-        <valueUri value="urn:hl7-org:sdtc"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
-        <valueString value="templateId"/>
-      </extension>
-      <path value="Precondition2.sdtcAllFalse.sdtcTemplateId"/>
-      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
-      </type>
-    </element>
-    <element id="Precondition2.sdtcAllFalse.sdtcId">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-        <valueUri value="urn:hl7-org:sdtc"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
-        <valueString value="id"/>
-      </extension>
-      <path value="Precondition2.sdtcAllFalse.sdtcId"/>
-      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Precondition2-SubType"/>
       </type>
     </element>
-    <element id="Precondition2.sdtcAllFalse.sdtcPrecondition">
+    <element id="Precondition2.sdtcAtLeastOneTrue">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
-        <valueString value="precondition"/>
+        <valueString value="atLeastOneTrue"/>
       </extension>
-      <path value="Precondition2.sdtcAllFalse.sdtcPrecondition"/>
-      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
-      <min value="0"/>
-      <max value="*"/>
+      <path value="Precondition2.sdtcAtLeastOneTrue"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+      <min value="1"/>
+      <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Precondition2"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Precondition2-SubType"/>
+      </type>
+    </element>
+    <element id="Precondition2.sdtcOnlyOneFalse">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="onlyOneFalse"/>
+      </extension>
+      <path value="Precondition2.sdtcOnlyOneFalse"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Precondition2-SubType"/>
+      </type>
+    </element>
+    <element id="Precondition2.sdtcOnlyOneTrue">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="onlyOneTrue"/>
+      </extension>
+      <path value="Precondition2.sdtcOnlyOneTrue"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Precondition2-SubType"/>
+      </type>
+    </element>
+    <element id="Precondition2.sdtcCriterion">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="criterion"/>
+      </extension>
+      <path value="Precondition2.sdtcCriterion"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Criterion"/>
       </type>
     </element>
   </differential>
