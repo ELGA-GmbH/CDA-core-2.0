@@ -71,14 +71,14 @@
         <code value="boolean"/>
       </type>
     </element>
-    <element id="InFulfillmentOf1.stdcRealmCode">
+    <element id="InFulfillmentOf1.sdtcRealmCode">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="realmCode"/>
       </extension>
-      <path value="InFulfillmentOf1.stdcRealmCode"/>
+      <path value="InFulfillmentOf1.sdtcRealmCode"/>
       <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
       <min value="0"/>
       <max value="*"/>
@@ -86,14 +86,14 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
     </element>
-    <element id="InFulfillmentOf1.stdcTypeId">
+    <element id="InFulfillmentOf1.sdtcTypeId">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="typeId"/>
       </extension>
-      <path value="InFulfillmentOf1.stdcTypeId"/>
+      <path value="InFulfillmentOf1.sdtcTypeId"/>
       <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
       <min value="0"/>
       <max value="1"/>
@@ -168,14 +168,14 @@
         <code value="code"/>
       </type>
     </element>
-    <element id="InFulfillmentOf1.sdtcActReference.stdcRealmCode">
+    <element id="InFulfillmentOf1.sdtcActReference.sdtcRealmCode">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="realmCode"/>
       </extension>
-      <path value="InFulfillmentOf1.sdtcActReference.stdcRealmCode"/>
+      <path value="InFulfillmentOf1.sdtcActReference.sdtcRealmCode"/>
       <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
       <min value="0"/>
       <max value="*"/>
@@ -183,14 +183,14 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
     </element>
-    <element id="InFulfillmentOf1.sdtcActReference.stdcTypeId">
+    <element id="InFulfillmentOf1.sdtcActReference.sdtcTypeId">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="typeId"/>
       </extension>
-      <path value="InFulfillmentOf1.sdtcActReference.stdcTypeId"/>
+      <path value="InFulfillmentOf1.sdtcActReference.sdtcTypeId"/>
       <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
       <min value="0"/>
       <max value="1"/>

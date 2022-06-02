@@ -79,14 +79,14 @@
       </type>
       <fixedCode value="EVN" />
     </element>
-    <element id="Precondition2-SubType.stdcRealmCode">
+    <element id="Precondition2-SubType.sdtcRealmCode">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="realmCode"/>
       </extension>
-      <path value="Precondition2-SubType.stdcRealmCode"/>
+      <path value="Precondition2-SubType.sdtcRealmCode"/>
       <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
       <min value="0"/>
       <max value="*"/>
@@ -94,14 +94,14 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
     </element>
-    <element id="Precondition2-SubType.stdcTypeId">
+    <element id="Precondition2-SubType.sdtcTypeId">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="typeId"/>
       </extension>
-      <path value="Precondition2-SubType.stdcTypeId"/>
+      <path value="Precondition2-SubType.sdtcTypeId"/>
       <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
       <min value="0"/>
       <max value="1"/>
