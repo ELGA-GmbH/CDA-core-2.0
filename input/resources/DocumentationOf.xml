@@ -52,7 +52,7 @@
         <code value="code"/>
       </type>
       <fixedCode value="DOC"/>
-      
+
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationType"/>
@@ -73,7 +73,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <!-- ELGA POCD_MT000040.InfrastructureRoot.typeId -->
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/InfrastructureRoot-typeId"/>
       </type>
     </element>
     <element id="DocumentationOf.templateId">
