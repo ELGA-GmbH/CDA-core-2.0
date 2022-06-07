@@ -56,16 +56,16 @@
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-RoleClassAssociative"/>
       </binding>
     </element>
-    <element id="AssignedEntity.realmCode">
-      <path value="AssignedEntity.realmCode"/>
+    <element id="AssociatedEntity.realmCode">
+      <path value="AssociatedEntity.realmCode"/>
       <min value="0"/>
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
     </element>
-    <element id="AssignedEntity.typeId">
-      <path value="AssignedEntity.typeId"/>
+    <element id="AssociatedEntity.typeId">
+      <path value="AssociatedEntity.typeId"/>
       <min value="0"/>
       <max value="1"/>
       <type>

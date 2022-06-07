@@ -21,8 +21,8 @@
       <min value="1"/>
       <max value="1"/>
     </element>
-    <element id="Consent.nullFlavor">
-      <path value="Consent.nullFlavor"/>
+    <element id="Criterion.nullFlavor">
+      <path value="Criterion.nullFlavor"/>
       <representation value="xmlAttr"/>
       <label value="Exceptional Value Detail"/>
       <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
@@ -67,16 +67,16 @@
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActMoodPredicate"/>
       </binding>
     </element>
-    <element id="Consent.realmCode">
-      <path value="Consent.realmCode"/>
+    <element id="Criterion.realmCode">
+      <path value="Criterion.realmCode"/>
       <min value="0"/>
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
     </element>
-    <element id="Consent.typeId">
-      <path value="Consent.typeId"/>
+    <element id="Criterion.typeId">
+      <path value="Criterion.typeId"/>
       <min value="0"/>
       <max value="1"/>
       <type>

@@ -29,8 +29,8 @@
       <min value="1"/>
       <max value="1"/>
     </element>
-    <element id="DataEnterer.nullFlavor">
-      <path value="DataEnterer.nullFlavor"/>
+    <element id="Device.nullFlavor">
+      <path value="Device.nullFlavor"/>
       <representation value="xmlAttr"/>
       <label value="Exceptional Value Detail"/>
       <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
