@@ -28,6 +28,22 @@
       <min value="1"/>
       <max value="1"/>
     </element>
+    <!-- ELGA Act.nullFlavor TODO push to upstream-->
+    <element id="AssignedEntity.nullFlavor">
+      <path value="AssignedEntity.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
     <element id="Birthplace.classCode">
       <path value="Birthplace.classCode"/>
       <representation value="xmlAttr"/>
@@ -38,11 +54,28 @@
       </type>
       <defaultValueCode value="BIRTHPL"/>
       <fixedCode value="BIRTHPL"/>
-      
+
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-RoleClassPassive"/>
       </binding>
+    </element>
+    <element id="Act.realmCode">
+      <path value="Act.realmCode"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="Act.typeId">
+      <path value="Act.typeId"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <!-- ELGA POCD_MT000040.InfrastructureRoot.typeId -->
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/InfrastructureRoot-typeId"/>
+      </type>
     </element>
     <element id="Birthplace.templateId">
       <path value="Birthplace.templateId"/>
