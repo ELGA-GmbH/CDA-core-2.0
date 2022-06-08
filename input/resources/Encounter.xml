@@ -29,6 +29,21 @@
       <min value="1"/>
       <max value="1"/>
     </element>
+    <element id="Encounter.nullFlavor">
+      <path value="Encounter.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
     <element id="Encounter.classCode">
       <path value="Encounter.classCode"/>
       <representation value="xmlAttr"/>
@@ -37,6 +52,7 @@
       <type>
         <code value="code"/>
       </type>
+      <!-- ELGA more restrictive than schema -->
       <fixedCode value="ENC"/>
       <binding>
         <strength value="required"/>
@@ -65,7 +81,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <!-- ELGA POCD_MT000040.InfrastructureRoot.typeId -->
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/InfrastructureRoot-typeId"/>
       </type>
     </element>
     <element id="Encounter.templateId">
@@ -157,6 +174,21 @@
         <code value="Element"/>
       </type>
     </element>
+    <element id="Encounter.subject.nullFlavor">
+      <path value="Encounter.subject.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
     <element id="Encounter.subject.typeCode">
       <path value="Encounter.subject.typeCode"/>
       <representation value="xmlAttr"/>
@@ -167,7 +199,7 @@
       </type>
       <defaultValueCode value="SBJ"/>
       <fixedCode value="SBJ"/>
-      
+
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationTargetSubject"/>
@@ -183,11 +215,37 @@
       </type>
       <defaultValueCode value="OP"/>
       <fixedCode value="OP"/>
-      
+
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>
       </binding>
+    </element>
+    <element id="Encounter.subject.realmCode">
+      <path value="Encounter.subject.realmCode"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="Encounter.subject.typeId">
+      <path value="Encounter.subject.typeId"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <!-- ELGA POCD_MT000040.InfrastructureRoot.typeId -->
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/InfrastructureRoot-typeId"/>
+      </type>
+    </element>
+    <element id="Encounter.subject.templateId">
+      <path value="Encounter.subject.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
     </element>
     <element id="Encounter.subject.awarenessCode">
       <path value="Encounter.subject.awarenessCode"/>
@@ -240,6 +298,28 @@
       <type>
         <code value="Element"/>
       </type>
+      <constraint>
+        <key value="encounter-informant-1"/>
+        <severity value="error"/>
+        <human value="Only one of assignedEntity and relatedEntity"/>
+        <expression value="(assignedEntity | relatedEntity).count() = 1"/>
+        <source value=""/>
+      </constraint>
+    </element>
+    <element id="Encounter.informant.nullFlavor">
+      <path value="Encounter.informant.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
+      </binding>
     </element>
     <element id="Encounter.informant.typeCode">
       <path value="Encounter.informant.typeCode"/>
@@ -270,6 +350,32 @@
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>
       </binding>
+    </element>
+    <element id="Encounter.informant.realmCode">
+      <path value="Encounter.informant.realmCode"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="Encounter.informant.typeId">
+      <path value="Encounter.informant.typeId"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <!-- ELGA POCD_MT000040.InfrastructureRoot.typeId -->
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/InfrastructureRoot-typeId"/>
+      </type>
+    </element>
+    <element id="Encounter.informant.templateId">
+      <path value="Encounter.informant.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
     </element>
     <element id="Encounter.informant.assignedEntity">
       <path value="Encounter.informant.assignedEntity"/>
@@ -306,9 +412,24 @@
         <key value="enc-er-1"/>
         <severity value="error"/>
         <human value="Only one of observation, regionOfInterest, observationMedia, substanceAdministration, supply, procedure, encounter, organizer, and act"/>
-        <expression value="(observation | regionOfInterest | observationMedia | substanceAdministration | supply | procedure | encounter | organizer | act).count() = 1"/>
+        <expression value="(act | encounter | observation | observationMedia | organizer | procedure | regionOfInterest | substanceAdministration | supply).count() = 1"/>
         <source value=""/>
       </constraint>
+    </element>
+    <element id="Encounter.entryRelationship.nullFlavor">
+      <path value="Encounter.entryRelationship.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
+      </binding>
     </element>
     <element id="Encounter.entryRelationship.typeCode">
       <path value="Encounter.entryRelationship.typeCode"/>
@@ -337,15 +458,7 @@
         <code value="boolean"/>
       </type>
       <defaultValueBoolean value="true"/>
-      
-    </element>
-    <element id="Encounter.entryRelationship.sequenceNumber">
-      <path value="Encounter.entryRelationship.sequenceNumber"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/INT"/>
-      </type>
+
     </element>
     <element id="Encounter.entryRelationship.negationInd">
       <path value="Encounter.entryRelationship.negationInd"/>
@@ -356,12 +469,62 @@
         <code value="boolean"/>
       </type>
     </element>
+    <element id="Encounter.entryRelationship.realmCode">
+      <path value="Encounter.entryRelationship.realmCode"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="Encounter.entryRelationship.typeId">
+      <path value="Encounter.entryRelationship.typeId"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <!-- ELGA POCD_MT000040.InfrastructureRoot.typeId -->
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/InfrastructureRoot-typeId"/>
+      </type>
+    </element>
+    <element id="Encounter.entryRelationship.templateId">
+      <path value="Encounter.entryRelationship.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="Encounter.entryRelationship.sequenceNumber">
+      <path value="Encounter.entryRelationship.sequenceNumber"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/INT"/>
+      </type>
+    </element>
     <element id="Encounter.entryRelationship.seperatableInd">
       <path value="Encounter.entryRelationship.seperatableInd"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
+      </type>
+    </element>
+    <element id="Encounter.entryRelationship.act">
+      <path value="Encounter.entryRelationship.act"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Act"/>
+      </type>
+    </element>
+    <element id="Encounter.entryRelationship.encounter">
+      <path value="Encounter.entryRelationship.encounter"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Encounter"/>
       </type>
     </element>
     <element id="Encounter.entryRelationship.observation">
@@ -372,20 +535,36 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Observation"/>
       </type>
     </element>
-    <element id="Encounter.entryRelationship.regionOfInterest">
-      <path value="Encounter.entryRelationship.regionOfInterest"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/RegionOfInterest"/>
-      </type>
-    </element>
     <element id="Encounter.entryRelationship.observationMedia">
       <path value="Encounter.entryRelationship.observationMedia"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ObservationMedia"/>
+      </type>
+    </element>
+    <element id="Encounter.entryRelationship.organizer">
+      <path value="Encounter.entryRelationship.organizer"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Organizer"/>
+      </type>
+    </element>
+    <element id="Encounter.entryRelationship.procedure">
+      <path value="Encounter.entryRelationship.procedure"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Procedure"/>
+      </type>
+    </element>
+    <element id="Encounter.entryRelationship.regionOfInterest">
+      <path value="Encounter.entryRelationship.regionOfInterest"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/RegionOfInterest"/>
       </type>
     </element>
     <element id="Encounter.entryRelationship.substanceAdministration">
@@ -404,38 +583,6 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Supply"/>
       </type>
     </element>
-    <element id="Encounter.entryRelationship.procedure">
-      <path value="Encounter.entryRelationship.procedure"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Procedure"/>
-      </type>
-    </element>
-    <element id="Encounter.entryRelationship.encounter">
-      <path value="Encounter.entryRelationship.encounter"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Encounter"/>
-      </type>
-    </element>
-    <element id="Encounter.entryRelationship.organizer">
-      <path value="Encounter.entryRelationship.organizer"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Organizer"/>
-      </type>
-    </element>
-    <element id="Encounter.entryRelationship.act">
-      <path value="Encounter.entryRelationship.act"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Act"/>
-      </type>
-    </element>
     <element id="Encounter.reference">
       <path value="Encounter.reference"/>
       <min value="0"/>
@@ -443,6 +590,28 @@
       <type>
         <code value="Element"/>
       </type>
+      <constraint>
+        <key value="encounter-reference-1"/>
+        <severity value="error"/>
+        <human value="Only one of externalAct, externalObservation, externalProcedure and externalDocument."/>
+        <expression value="(externalAct | externalObservation | externalProcedure | externalDocument).count() = 1"/>
+        <source value=""/>
+      </constraint>
+    </element>
+    <element id="Encounter.reference.nullFlavor">
+      <path value="Encounter.reference.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
+      </binding>
     </element>
     <element id="Encounter.reference.typeCode">
       <path value="Encounter.reference.typeCode"/>
@@ -452,7 +621,33 @@
       <type>
         <code value="code"/>
       </type>
-      
+
+    </element>
+    <element id="Encounter.reference.realmCode">
+      <path value="Encounter.reference.realmCode"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="Encounter.reference.typeId">
+      <path value="Encounter.reference.typeId"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <!-- ELGA POCD_MT000040.InfrastructureRoot.typeId -->
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/InfrastructureRoot-typeId"/>
+      </type>
+    </element>
+    <element id="Encounter.reference.templateId">
+      <path value="Encounter.reference.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
     </element>
     <element id="Encounter.reference.seperatableInd">
       <path value="Encounter.reference.seperatableInd"/>
@@ -500,6 +695,36 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Precondition"/>
+      </type>
+    </element>
+    <!-- ELGA sdtc:precondition2 TODO push to upstream -->
+    <element id="Encounter.sdtcPrecondition2">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="precondition2"/>
+      </extension>
+      <path value="Encounter.sdtcPrecondition2"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Precondition2"/>
+      </type>
+    </element>
+    <!-- ELGA sdtc:inFulfillmentOf1 TODO push to upstream -->
+    <element id="Encounter.sdtcInFulfillmentOf1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="inFulfillmentOf1"/>
+      </extension>
+      <path value="Encounter.sdtcInFulfillmentOf1"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/InFulfillmentOf1"/>
       </type>
     </element>
   </differential>
