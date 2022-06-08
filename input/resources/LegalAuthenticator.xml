@@ -30,6 +30,7 @@
       <min value="1"/>
       <max value="1"/>
     </element>
+    <!-- ELGA TODO LegalAuthenticator.ID attribute -->
     <element id="LegalAuthenticator.nullFlavor">
       <path value="LegalAuthenticator.nullFlavor"/>
       <representation value="xmlAttr"/>
@@ -54,7 +55,7 @@
         <code value="code"/>
       </type>
       <fixedCode value="LA"/>
-      
+
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationType"/>
@@ -69,7 +70,7 @@
         <code value="code"/>
       </type>
       <fixedCode value="OP"/>
-      
+
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>
@@ -90,7 +91,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <!-- ELGA POCD_MT000040.InfrastructureRoot.typeId -->
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/InfrastructureRoot-typeId"/>
       </type>
     </element>
     <element id="LegalAuthenticator.templateId">
