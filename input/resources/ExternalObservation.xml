@@ -74,16 +74,16 @@
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActMood"/>
       </binding>
     </element>
-    <element id="ExternalDocument.realmCode">
-      <path value="ExternalDocument.realmCode"/>
+    <element id="ExternalObservation.realmCode">
+      <path value="ExternalObservation.realmCode"/>
       <min value="0"/>
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
     </element>
-    <element id="ExternalDocument.typeId">
-      <path value="ExternalDocument.typeId"/>
+    <element id="ExternalObservation.typeId">
+      <path value="ExternalObservation.typeId"/>
       <min value="0"/>
       <max value="1"/>
       <type>
