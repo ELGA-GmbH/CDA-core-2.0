@@ -118,14 +118,14 @@
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActCode"/>
       </binding>
     </element>
-    <element id="OrganizationPartOf.sdtcText">
+    <element id="Organizer.sdtcText">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="text"/>
       </extension>
-      <path value="OrganizationPartOf.sdtcText"/>
+      <path value="Organizer.sdtcText"/>
       <min value="0"/>
       <max value="1"/>
       <type>
