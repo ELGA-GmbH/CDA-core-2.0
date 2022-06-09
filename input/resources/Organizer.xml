@@ -29,6 +29,21 @@
       <min value="1"/>
       <max value="1"/>
     </element>
+    <element id="Organizer.nullFlavor">
+      <path value="Organizer.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
     <element id="Organizer.classCode">
       <path value="Organizer.classCode"/>
       <representation value="xmlAttr"/>
@@ -70,7 +85,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <!-- ELGA POCD_MT000040.InfrastructureRoot.typeId -->
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/InfrastructureRoot-typeId"/>
       </type>
     </element>
     <element id="Organizer.templateId">
@@ -102,6 +118,20 @@
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActCode"/>
       </binding>
     </element>
+    <element id="OrganizationPartOf.sdtcText">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="text"/>
+      </extension>
+      <path value="OrganizationPartOf.sdtcText"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+      </type>
+    </element>
     <element id="Organizer.statusCode">
       <path value="Organizer.statusCode"/>
       <min value="1"/>
@@ -122,7 +152,7 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"/>
       </type>
     </element>
-    
+
     <element id="Organizer.subject">
       <path value="Organizer.subject"/>
       <min value="0"/>
@@ -130,6 +160,21 @@
       <type>
         <code value="Element"/>
       </type>
+    </element>
+    <element id="Organizer.subject.nullFlavor">
+      <path value="Organizer.subject.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
+      </binding>
     </element>
     <element id="Organizer.subject.typeCode">
       <path value="Organizer.subject.typeCode"/>
@@ -141,6 +186,7 @@
       </type>
       <defaultValueCode value="SBJ"/>
       <fixedCode value="SBJ"/>
+
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationTargetSubject"/>
@@ -156,10 +202,37 @@
       </type>
       <defaultValueCode value="OP"/>
       <fixedCode value="OP"/>
+
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>
       </binding>
+    </element>
+    <element id="Organizer.subject.realmCode">
+      <path value="Organizer.subject.realmCode"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="Organizer.subject.typeId">
+      <path value="Organizer.subject.typeId"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <!-- ELGA POCD_MT000040.InfrastructureRoot.typeId -->
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/InfrastructureRoot-typeId"/>
+      </type>
+    </element>
+    <element id="Organizer.subject.templateId">
+      <path value="Organizer.subject.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
     </element>
     <element id="Organizer.subject.awarenessCode">
       <path value="Organizer.subject.awarenessCode"/>
@@ -210,53 +283,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Element"/>
-      </type>
-    </element>
-    <element id="Organizer.informant.typeCode">
-      <path value="Organizer.informant.typeCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <defaultValueCode value="INF"/>
-      <fixedCode value="INF"/>
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationInformationGenerator"/>
-      </binding>
-    </element>
-    <element id="Organizer.informant.contextControlCode">
-      <path value="Organizer.informant.contextControlCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <defaultValueCode value="OP"/>
-      <fixedCode value="OP"/>
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>
-      </binding>
-    </element>
-    <element id="Organizer.informant.assignedEntity">
-      <path value="Organizer.informant.assignedEntity"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"/>
-      </type>
-    </element>
-    <element id="Organizer.informant.relatedEntity">
-      <path value="Organizer.informant.relatedEntity"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/RelatedEntity"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Informant"/>
       </type>
     </element>
     <element id="Organizer.participant">
@@ -267,6 +294,7 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Participant2"/>
       </type>
     </element>
+
     <element id="Organizer.reference">
       <path value="Organizer.reference"/>
       <min value="0"/>
@@ -274,6 +302,29 @@
       <type>
         <code value="Element"/>
       </type>
+      <constraint>
+        <key value="act-reference-1"/>
+        <severity value="error"/>
+        <human value="Only one of externalAct, externalObservation, externalProcedure and externalDocument"/>
+        <expression value="(externalAct | externalObservation | externalProcedure | externalDocument).count() = 1"/>
+        <source value=""/>
+      </constraint>
+    </element>
+    <!-- ELGA Organizer.reference.nullFlavor TODO push to upstream-->
+    <element id="Organizer.reference.nullFlavor">
+      <path value="Organizer.reference.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
+      </binding>
     </element>
     <element id="Organizer.reference.typeCode">
       <path value="Organizer.reference.typeCode"/>
@@ -283,7 +334,35 @@
       <type>
         <code value="code"/>
       </type>
-      
+    </element>
+    <!-- ELGA Organizer.reference.realmCode TODO push to upstream-->
+    <element id="Organizer.reference.realmCode">
+      <path value="Organizer.reference.realmCode"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <!-- ELGA Organizer.reference.typeId TODO push to upstream-->
+    <element id="Organizer.reference.typeId">
+      <path value="Organizer.reference.typeId"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <!-- ELGA POCD_MT000040.InfrastructureRoot.typeId -->
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/InfrastructureRoot-typeId"/>
+      </type>
+    </element>
+    <!-- ELGA Organizer.reference.templateId TODO push to upstream-->
+    <element id="Organizer.reference.templateId">
+      <path value="Organizer.reference.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
     </element>
     <element id="Organizer.reference.seperatableInd">
       <path value="Organizer.reference.seperatableInd"/>
@@ -340,6 +419,28 @@
       <type>
         <code value="Element"/>
       </type>
+      <constraint>
+        <key value="org-component-1"/>
+        <severity value="error"/>
+        <human value="Only one of assignedEntity and relatedEntity"/>
+        <expression value="(act | encounter | observation| observationMedia | organizer | procedure | regionOfInterest | substanceAdministration | supply).count() = 1"/>
+        <source value=""/>
+      </constraint>
+    </element>
+    <element id="Organizer.component.nullFlavor">
+      <path value="Organizer.component.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
+      </binding>
     </element>
     <element id="Organizer.component.typeCode">
       <path value="Organizer.component.typeCode"/>
@@ -362,8 +463,48 @@
       </type>
       <defaultValueBoolean value="true"/>
     </element>
+    <element id="Organizer.component.realmCode">
+      <path value="Organizer.component.realmCode"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="Organizer.component.typeId">
+      <path value="Organizer.component.typeId"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <!-- ELGA POCD_MT000040.InfrastructureRoot.typeId -->
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/InfrastructureRoot-typeId"/>
+      </type>
+    </element>
+    <element id="Organizer.component.templateId">
+      <path value="Organizer.component.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
     <element id="Organizer.component.sequenceNumber">
       <path value="Organizer.component.sequenceNumber"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/INT"/>
+      </type>
+    </element>
+    <element id="Organizer.component.sdtcPriorityNumber">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="priorityNumber"/>
+      </extension>
+      <path value="Organizer.component.sdtcPriorityNumber"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -378,6 +519,22 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
       </type>
     </element>
+    <element id="Organizer.component.act">
+      <path value="Organizer.component.act"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Act"/>
+      </type>
+    </element>
+    <element id="Organizer.component.encounter">
+      <path value="Organizer.component.encounter"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Encounter"/>
+      </type>
+    </element>
     <element id="Organizer.component.observation">
       <path value="Organizer.component.observation"/>
       <min value="0"/>
@@ -386,20 +543,36 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Observation"/>
       </type>
     </element>
-    <element id="Organizer.component.regionOfInterest">
-      <path value="Organizer.component.regionOfInterest"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/RegionOfInterest"/>
-      </type>
-    </element>
     <element id="Organizer.component.observationMedia">
       <path value="Organizer.component.observationMedia"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ObservationMedia"/>
+      </type>
+    </element>
+    <element id="Organizer.component.organizer">
+      <path value="Organizer.component.organizer"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Organizer"/>
+      </type>
+    </element>
+    <element id="Organizer.component.procedure">
+      <path value="Organizer.component.procedure"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Procedure"/>
+      </type>
+    </element>
+    <element id="Organizer.component.regionOfInterest">
+      <path value="Organizer.component.regionOfInterest"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/RegionOfInterest"/>
       </type>
     </element>
     <element id="Organizer.component.substanceAdministration">
@@ -416,38 +589,6 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Supply"/>
-      </type>
-    </element>
-    <element id="Organizer.component.procedure">
-      <path value="Organizer.component.procedure"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Procedure"/>
-      </type>
-    </element>
-    <element id="Organizer.component.encounter">
-      <path value="Organizer.component.encounter"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Encounter"/>
-      </type>
-    </element>
-    <element id="Organizer.component.organizer">
-      <path value="Organizer.component.organizer"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Organizer"/>
-      </type>
-    </element>
-    <element id="Organizer.component.act">
-      <path value="Organizer.component.act"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Act"/>
       </type>
     </element>
   </differential>
