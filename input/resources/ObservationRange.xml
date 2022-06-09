@@ -205,7 +205,6 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <!-- TODO Precondition1 -->
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Precondition1"/>
       </type>
     </element>
