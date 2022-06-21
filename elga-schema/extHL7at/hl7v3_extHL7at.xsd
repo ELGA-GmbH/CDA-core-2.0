@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+*******************************************************************************
+Schema for HL7 Clinical Document Architecture (CDA) R2 (2005)
+Containing Extensions for HL7 Austria
+
+History:
+2020.05.18 Nikola Tanjga, ELGA GmbH, Austria (creating new schema, using namespace first time and adding first element practiceSetting)
+2020.07.08 Nikola Tanjga, ELGA GmbH, Austria (added hl7at:terminologyDate und hl7at:formatCode)
+2021.02.24 Nikola Tanjga, ELGA GmbH, Austria (changed hl7at:formatCode from CS to CD)
+
+*******************************************************************************
+-->
+<xs:schema targetNamespace="urn:hl7-at:v3" xmlns="urn:hl7-at:v3" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:hl7="urn:hl7-org:v3" elementFormDefault="qualified">
+    <xs:import namespace="urn:hl7-org:v3" schemaLocation="../POCD_MT000040_SDTC_extELGA.xsd"/>
+    
+    <xs:element name="terminologyDate" type="hl7:TS" />
+    <xs:element name="formatCode" type="hl7:CD" />
+    <xs:element name="practiceSettingCode" type="hl7:CD" />
+</xs:schema>

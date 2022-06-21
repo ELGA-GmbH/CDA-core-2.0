@@ -1,0 +1,30 @@
+----------------------------------------
+Changelog
+----------------------------------------
+
+Version 1.5.0+20210224-3.2.0
+
+2021.02.24 Nikola Tanjga, ELGA GmbH, Austria (changed hl7at:formatCode from CS to CD)
+
+Version 1.04 for Allgemeiner Leitfaden 3.0.0+20201001
+
+
+2020.07.08 Nikola Tanjga, ELGA GmbH, Austria (added hl7at:terminologyDate und hl7at:formatCode)
+2020.07.07 Nikola Tanjga, ELGA GmbH, Austria (commenting out of extensions CD.IPS, CE.IPS and CV.IPS, using the designation element directly in CD, CE and CV)
+2020-05-29 Nikola Tanjga, ELGA GmbH, Austria (creating new schema with the namespace urn:hl7-org:ips, using namespace first time and creation extensions CD.IPS, CE.IPS and CV.IPS with added designation subelement)
+2020-05-18 Nikola Tanjga, ELGA GmbH, Austria (creating new schema with the namespace urn:hl7-at:v3, using namespace first time and adding first element practiceSetting)
+2020-04-29 Nikola Tanjga, ELGA GmbH, Austria (added https in "URLScheme" simpleType and changed legalAuthenticator and telecom of CustodianOrganization from 0..1 to 0..*)
+2020-04-27 Nikola Tanjga, ELGA GmbH, Austria (removing hl7v3 as namespace name and adding it as standard namespace, alike original HL7 schema, adapting complextype br and adapting mediaType to x-hl7-te and adding all SDTC Elements)
+
+
+Version 1.03
+
+
+2015-08-08 OKU NarrativeBlock.xsd wurde korrigiert. ALT: <xs:attribute name="mediaType" type="xs:string" fixed="text/x-hl7-text+xml"/>; NEU: <xs:attribute name="mediaType" type="xs:string" fixed="text/plain"/>
+
+
+Version 1.02
+
+
+2014-03-12 SSA voc.xsd wurde ergänzt mit ELGA Values für TimingEvent (Neu: CD, CM, CV) 
+2014-03-12 SSA voc.xsd wurde ergänzt mit ELGA Values für URLScheme (Neu: ME)

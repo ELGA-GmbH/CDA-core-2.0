@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+*******************************************************************************
+Schema for HL7 Clinical Document Architecture (CDA) R2 (2005)
+Containing Extensions for the International Patient Summary
+
+History:
+2020.05.29 Nikola Tanjga, ELGA GmbH, Austria (creating new schema, using namespace first time and creation extensions CD.IPS, CE.IPS and CV.IPS with added designation subelement)
+2020.07.07 Nikola Tanjga, ELGA GmbH, Austria (commenting out of extensions CD.IPS, CE.IPS and CV.IPS, using the designation element directly in CD, CE and CV)
+
+*******************************************************************************
+-->
+<xs:schema targetNamespace="urn:hl7-org:ips" xmlns="urn:hl7-org:ips"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:hl7="urn:hl7-org:v3"
+    elementFormDefault="qualified">
+    <xs:import namespace="urn:hl7-org:v3" schemaLocation="../POCD_MT000040_SDTC_extELGA.xsd"/>
+
+    <xs:element name="designation" type="hl7:ST"/>
+    <!--
+    <xs:complexType name="CD.IPS">
+        <xs:complexContent>
+            <xs:extension base="hl7:CD">
+                <xs:sequence>
+                    <xs:element name="designation" type="hl7:ST" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation> Given that the base CDA R2 standard which uses
+                                datatypes R1 does not offer a native way to convey the language
+                                translation of 'displayName', this introduces an optional
+                                'ips:designation' extension to the CD, CE and CV datatype for that
+                                purpose.
+                                (http://international-patient-summary.net/mediawiki/index.php?title=IPS_implementationguide_1)
+                            </xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    
+    <xs:complexType name="CE.IPS">
+        <xs:complexContent>
+            <xs:extension base="hl7:CE">
+                <xs:sequence>
+                    <xs:element name="designation" type="hl7:ST" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation> Given that the base CDA R2 standard which uses
+                                datatypes R1 does not offer a native way to convey the language
+                                translation of 'displayName', this introduces an optional
+                                'ips:designation' extension to the CD, CE and CV datatype for that
+                                purpose.
+                                (http://international-patient-summary.net/mediawiki/index.php?title=IPS_implementationguide_1)
+                            </xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    
+    <xs:complexType name="CV.IPS">
+        <xs:complexContent>
+            <xs:extension base="hl7:CV">
+                <xs:sequence>
+                    <xs:element name="designation" type="hl7:ST" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation> Given that the base CDA R2 standard which uses
+                                datatypes R1 does not offer a native way to convey the language
+                                translation of 'displayName', this introduces an optional
+                                'ips:designation' extension to the CD, CE and CV datatype for that
+                                purpose.
+                                (http://international-patient-summary.net/mediawiki/index.php?title=IPS_implementationguide_1)
+                            </xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    -->
+</xs:schema>
