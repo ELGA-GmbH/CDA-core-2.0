@@ -125,14 +125,14 @@
       </type>
     </element>
     <!-- ELGA sdtc:statusCode TODO push to upstream-->
-    <element id="ClinicalDocument.sdtcStatusCode">
+    <element id="ClinicalDocument.statusCode">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="statusCode"/>
       </extension>
-      <path value="ClinicalDocument.sdtcStatusCode"/>
+      <path value="ClinicalDocument.statusCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -140,14 +140,14 @@
       </type>
     </element>
     <!-- ELGA hl7at:terminologyDate -->
-    <element id="ClinicalDocument.hl7atTerminologyDate">
+    <element id="ClinicalDocument.terminologyDate">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-at:v3"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="terminologyDate"/>
       </extension>
-      <path value="ClinicalDocument.hl7atTerminologyDate"/>
+      <path value="ClinicalDocument.terminologyDate"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -155,14 +155,14 @@
       </type>
     </element>
     <!-- ELGA hl7at:formatCode -->
-    <element id="ClinicalDocument.hl7atFormatCode">
+    <element id="ClinicalDocument.formatCode">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-at:v3"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="formatCode"/>
       </extension>
-      <path value="ClinicalDocument.hl7atFormatCode"/>
+      <path value="ClinicalDocument.formatCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -170,14 +170,14 @@
       </type>
     </element>
     <!-- ELGA hl7at:practiceSettingCode -->
-    <element id="ClinicalDocument.hl7atPracticeSettingCode">
+    <element id="ClinicalDocument.practiceSettingCode">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-at:v3"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="practiceSettingCode"/>
       </extension>
-      <path value="ClinicalDocument.hl7atPracticeSettingCode"/>
+      <path value="ClinicalDocument.practiceSettingCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
