@@ -48,7 +48,7 @@
     <element id="Place.classCode">
       <path value="Place.classCode"/>
       <representation value="xmlAttr"/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
@@ -64,7 +64,7 @@
     <element id="Place.determinerCode">
       <path value="Place.determinerCode"/>
       <representation value="xmlAttr"/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
