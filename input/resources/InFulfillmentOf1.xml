@@ -71,14 +71,14 @@
         <code value="boolean"/>
       </type>
     </element>
-    <element id="InFulfillmentOf1.sdtcRealmCode">
+    <element id="InFulfillmentOf1.realmCode">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="realmCode"/>
       </extension>
-      <path value="InFulfillmentOf1.sdtcRealmCode"/>
+      <path value="InFulfillmentOf1.realmCode"/>
       <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
       <min value="0"/>
       <max value="*"/>
@@ -86,14 +86,14 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
     </element>
-    <element id="InFulfillmentOf1.sdtcTypeId">
+    <element id="InFulfillmentOf1.typeId">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="typeId"/>
       </extension>
-      <path value="InFulfillmentOf1.sdtcTypeId"/>
+      <path value="InFulfillmentOf1.typeId"/>
       <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
       <min value="0"/>
       <max value="1"/>
@@ -102,14 +102,14 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/InfrastructureRoot-typeId"/>
       </type>
     </element>
-    <element id="InFulfillmentOf1.sdtcTemplateId">
+    <element id="InFulfillmentOf1.templateId">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="templateId"/>
       </extension>
-      <path value="InFulfillmentOf1.sdtcTemplateId"/>
+      <path value="InFulfillmentOf1.templateId"/>
       <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
       <min value="0"/>
       <max value="*"/>
@@ -117,25 +117,25 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
-    <element id="InFulfillmentOf1.sdtcActReference">
+    <element id="InFulfillmentOf1.actReference">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="actReference"/>
       </extension>
-      <path value="InFulfillmentOf1.sdtcActReference"/>
+      <path value="InFulfillmentOf1.actReference"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="Element"/>
       </type>
     </element>
-    <element id="InFulfillmentOf1.sdtcActReference.classCode">
+    <element id="InFulfillmentOf1.actReference.classCode">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:v3"/>
       </extension>
-      <path value="InFulfillmentOf1.sdtcActReference.classCode"/>
+      <path value="InFulfillmentOf1.actReference.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -143,11 +143,11 @@
         <code value="code"/>
       </type>
     </element>
-    <element id="InFulfillmentOf1.sdtcActReference.moodCode">
+    <element id="InFulfillmentOf1.actReference.moodCode">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:v3"/>
       </extension>
-      <path value="InFulfillmentOf1.sdtcActReference.moodCode"/>
+      <path value="InFulfillmentOf1.actReference.moodCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -155,11 +155,11 @@
         <code value="code"/>
       </type>
     </element>
-    <element id="InFulfillmentOf1.sdtcActReference.determinerCode">
+    <element id="InFulfillmentOf1.actReference.determinerCode">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:v3"/>
       </extension>
-      <path value="InFulfillmentOf1.sdtcActReference.determinerCode"/>
+      <path value="InFulfillmentOf1.actReference.determinerCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -168,14 +168,14 @@
         <code value="code"/>
       </type>
     </element>
-    <element id="InFulfillmentOf1.sdtcActReference.sdtcRealmCode">
+    <element id="InFulfillmentOf1.actReference.realmCode">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="realmCode"/>
       </extension>
-      <path value="InFulfillmentOf1.sdtcActReference.sdtcRealmCode"/>
+      <path value="InFulfillmentOf1.actReference.realmCode"/>
       <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
       <min value="0"/>
       <max value="*"/>
@@ -183,14 +183,14 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
     </element>
-    <element id="InFulfillmentOf1.sdtcActReference.sdtcTypeId">
+    <element id="InFulfillmentOf1.actReference.typeId">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="typeId"/>
       </extension>
-      <path value="InFulfillmentOf1.sdtcActReference.sdtcTypeId"/>
+      <path value="InFulfillmentOf1.actReference.typeId"/>
       <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
       <min value="0"/>
       <max value="1"/>
@@ -199,14 +199,14 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/InfrastructureRoot-typeId"/>
       </type>
     </element>
-    <element id="InFulfillmentOf1.sdtcActReference.sdtcTemplateId">
+    <element id="InFulfillmentOf1.actReference.templateId">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="templateId"/>
       </extension>
-      <path value="InFulfillmentOf1.sdtcActReference.sdtcTemplateId"/>
+      <path value="InFulfillmentOf1.actReference.templateId"/>
       <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
       <min value="0"/>
       <max value="*"/>
@@ -214,14 +214,14 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
-    <element id="InFulfillmentOf1.sdtcActReference.sdtcId">
+    <element id="InFulfillmentOf1.actReference.id">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="id"/>
       </extension>
-      <path value="InFulfillmentOf1.sdtcActReference.sdtcId"/>
+      <path value="InFulfillmentOf1.actReference.id"/>
       <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
       <min value="1"/>
       <max value="*"/>

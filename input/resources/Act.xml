@@ -718,14 +718,14 @@
       </type>
     </element>
     <!-- ELGA sdtc:precondition2 TODO push to upstream -->
-    <element id="Act.sdtcPrecondition2">
+    <element id="Act.precondition2">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="precondition2"/>
       </extension>
-      <path value="Act.sdtcPrecondition2"/>
+      <path value="Act.precondition2"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -733,14 +733,14 @@
       </type>
     </element>
     <!-- ELGA sdtc:inFulfillmentOf1 TODO push to upstream -->
-    <element id="Act.sdtcInFulfillmentOf1">
+    <element id="Act.inFulfillmentOf1">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="inFulfillmentOf1"/>
       </extension>
-      <path value="Act.sdtcInFulfillmentOf1"/>
+      <path value="Act.inFulfillmentOf1"/>
       <min value="0"/>
       <max value="*"/>
       <type>
