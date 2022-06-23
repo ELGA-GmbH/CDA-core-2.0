@@ -30,6 +30,24 @@
       <min value="1"/>
       <max value="1"/>
     </element>
+    <element id="ServiceEvent.nullFlavor">
+      <path value="ServiceEvent.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANY.nullFlavor"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
     <element id="ServiceEvent.classCode">
       <path value="ServiceEvent.classCode"/>
       <representation value="xmlAttr"/>
@@ -39,7 +57,7 @@
         <code value="code"/>
       </type>
       <defaultValueCode value="ACT"/>
-      
+
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActClass"/>
@@ -55,7 +73,7 @@
       </type>
       <defaultValueCode value="EVN"/>
       <fixedCode value="EVN"/>
-      
+
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActMood"/>
