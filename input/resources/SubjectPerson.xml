@@ -28,6 +28,24 @@
       <min value="1"/>
       <max value="1"/>
     </element>
+    <element id="SubjectPerson.nullFlavor">
+      <path value="SubjectPerson.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANY.nullFlavor"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
     <element id="SubjectPerson.classCode">
       <path value="SubjectPerson.classCode"/>
       <representation value="xmlAttr"/>
@@ -38,7 +56,7 @@
       </type>
       <defaultValueCode value="PSN"/>
       <fixedCode value="PSN"/>
-      
+
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityClassLivingSubject"/>
@@ -54,15 +72,48 @@
       </type>
       <defaultValueCode value="INSTANCE"/>
       <fixedCode value="INSTANCE"/>
-      
+
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityDeterminer"/>
       </binding>
     </element>
+    <element id="SubjectPerson.realmCode">
+      <path value="SubjectPerson.realmCode"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="SubjectPerson.typeId">
+      <path value="SubjectPerson.typeId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <!-- ELGA POCD_MT000040.InfrastructureRoot.typeId -->
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/InfrastructureRoot-typeId"/>
+      </type>
+    </element>
     <element id="SubjectPerson.templateId">
       <path value="SubjectPerson.templateId"/>
       <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="SubjectPerson.id">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="id"/>
+      </extension>
+      <path value="SubjectPerson.id"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -74,17 +125,17 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/PN"/>
       </type>
     </element>
-    <element id="SubjectPerson.sdtcDesc">
+    <element id="SubjectPerson.desc">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="desc"/>
       </extension>
-      <path value="SubjectPerson.sdtcDesc"/>
+      <path value="SubjectPerson.desc"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -111,32 +162,88 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
       </type>
     </element>
-    <element id="SubjectPerson.sdtcDeceasedInd">
+    <element id="SubjectPerson.deceasedInd">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="deceasedInd"/>
       </extension>
-      <path value="SubjectPerson.sdtcDeceasedInd"/>
+      <path value="SubjectPerson.deceasedInd"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
       </type>
     </element>
-    <element id="SubjectPerson.sdtcDeceasedTime">
+    <element id="SubjectPerson.deceasedTime">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="deceasedTime"/>
       </extension>
-      <path value="SubjectPerson.sdtcDeceasedTime"/>
+      <path value="SubjectPerson.deceasedTime"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
+      </type>
+    </element>
+    <element id="SubjectPerson.multipleBirthInd">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="multipleBirthInd"/>
+      </extension>
+      <path value="SubjectPerson.multipleBirthInd"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
+      </type>
+    </element>
+    <element id="SubjectPerson.multipleBirthOrderNumber">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="multipleBirthOrderNumber"/>
+      </extension>
+      <path value="SubjectPerson.multipleBirthOrderNumber"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/INT-POS"/>
+      </type>
+    </element>
+    <element id="SubjectPerson.raceCode">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="raceCode"/>
+      </extension>
+      <path value="SubjectPerson.raceCode"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+      </type>
+    </element>
+    <element id="SubjectPerson.ethnicGroupCode">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="ethnicGroupCode"/>
+      </extension>
+      <path value="SubjectPerson.ethnicGroupCode"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
       </type>
     </element>
   </differential>
