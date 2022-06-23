@@ -31,6 +31,24 @@
       <min value="1"/>
       <max value="1"/>
     </element>
+    <element id="SubstanceAdministration.nullFlavor">
+      <path value="SubstanceAdministration.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANY.nullFlavor"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
     <element id="SubstanceAdministration.classCode">
       <path value="SubstanceAdministration.classCode"/>
       <representation value="xmlAttr"/>
@@ -55,6 +73,15 @@
         <code value="code"/>
       </type>
     </element>
+    <element id="SubstanceAdministration.negationInd">
+      <path value="SubstanceAdministration.negationInd"/>
+      <representation value="xmlAttr"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
     <element id="SubstanceAdministration.realmCode">
       <path value="SubstanceAdministration.realmCode"/>
       <min value="0"/>
@@ -68,7 +95,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <!-- ELGA POCD_MT000040.InfrastructureRoot.typeId -->
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/InfrastructureRoot-typeId"/>
       </type>
     </element>
     <element id="SubstanceAdministration.templateId">
@@ -99,15 +127,6 @@
         <strength value="extensible"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-SubstanceAdministrationActCode"/>
       </binding>
-    </element>
-    <element id="SubstanceAdministration.negationInd">
-      <path value="SubstanceAdministration.negationInd"/>
-      <representation value="xmlAttr"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="boolean"/>
-      </type>
     </element>
     <element id="SubstanceAdministration.text">
       <path value="SubstanceAdministration.text"/>
@@ -233,6 +252,22 @@
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-AdministrableDrugForm"/>
       </binding>
     </element>
+    <element id="SubstanceAdministration.subject">
+      <path value="SubstanceAdministration.subject"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Subject"/>
+      </type>
+    </element>
+    <element id="SubstanceAdministration.specimen">
+      <path value="SubstanceAdministration.specimen"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Specimen"/>
+      </type>
+    </element>
     <element id="SubstanceAdministration.consumable">
       <path value="SubstanceAdministration.consumable"/>
       <min value="1"/>
@@ -240,6 +275,24 @@
       <type>
         <code value="Element"/>
       </type>
+    </element>
+    <element id="SubstanceAdministration.consumable.nullFlavor">
+      <path value="SubstanceAdministration.consumable.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANY.nullFlavor"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
+      </binding>
     </element>
     <element id="SubstanceAdministration.consumable.typeCode">
       <path value="SubstanceAdministration.consumable.typeCode"/>
@@ -257,28 +310,38 @@
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationTargetDirect"/>
       </binding>
     </element>
+    <element id="SubstanceAdministration.consumable.realmCode">
+      <path value="SubstanceAdministration.consumable.realmCode"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="SubstanceAdministration.consumable.typeId">
+      <path value="SubstanceAdministration.consumable.typeId"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <!-- ELGA POCD_MT000040.InfrastructureRoot.typeId -->
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/InfrastructureRoot-typeId"/>
+      </type>
+    </element>
+    <element id="SubstanceAdministration.consumable.templateId">
+      <path value="SubstanceAdministration.consumable.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
     <element id="SubstanceAdministration.consumable.manufacturedProduct">
       <path value="SubstanceAdministration.consumable.manufacturedProduct"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ManufacturedProduct"/>
-      </type>
-    </element>
-    <element id="SubstanceAdministration.subject">
-      <path value="SubstanceAdministration.subject"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Subject"/>
-      </type>
-    </element>
-    <element id="SubstanceAdministration.specimen">
-      <path value="SubstanceAdministration.specimen"/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Specimen"/>
       </type>
     </element>
     <element id="SubstanceAdministration.performer">
@@ -302,55 +365,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Element"/>
-      </type>
-    </element>
-    <element id="SubstanceAdministration.informant.typeCode">
-      <path value="SubstanceAdministration.informant.typeCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <defaultValueCode value="INF"/>
-      <fixedCode value="INF"/>
-
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationInformationGenerator"/>
-      </binding>
-    </element>
-    <element id="SubstanceAdministration.informant.contextControlCode">
-      <path value="SubstanceAdministration.informant.contextControlCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <defaultValueCode value="OP"/>
-      <fixedCode value="OP"/>
-
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>
-      </binding>
-    </element>
-    <element id="SubstanceAdministration.informant.assignedEntity">
-      <path value="SubstanceAdministration.informant.assignedEntity"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"/>
-      </type>
-    </element>
-    <element id="SubstanceAdministration.informant.relatedEntity">
-      <path value="SubstanceAdministration.informant.relatedEntity"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/RelatedEntity"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Informant"/>
       </type>
     </element>
     <element id="SubstanceAdministration.participant">
@@ -383,6 +398,20 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Precondition"/>
+      </type>
+    </element>
+    <element id="Act.inFulfillmentOf1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="inFulfillmentOf1"/>
+      </extension>
+      <path value="Act.inFulfillmentOf1"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/InFulfillmentOf1"/>
       </type>
     </element>
   </differential>
