@@ -512,6 +512,11 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="StructureDefinition/Reference" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="StructureDefinition/RegionOfInterest" />
 			</reference>
 		</resource>
