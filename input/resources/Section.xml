@@ -86,6 +86,25 @@
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActMood"/>
       </binding>
     </element>
+    <element id="Section.realmCode">
+      <path value="Section.realmCode"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="Section.typeId">
+      <path value="Section.typeId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <!-- ELGA POCD_MT000040.InfrastructureRoot.typeId -->
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/InfrastructureRoot-typeId"/>
+      </type>
+    </element>
     <element id="Section.templateId">
       <path value="Section.templateId"/>
       <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
@@ -174,55 +193,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Element"/>
-      </type>
-    </element>
-    <element id="Section.informant.typeCode">
-      <path value="Section.informant.typeCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <defaultValueCode value="INF"/>
-      <fixedCode value="INF"/>
-
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationInformationGenerator"/>
-      </binding>
-    </element>
-    <element id="Section.informant.contextControlCode">
-      <path value="Section.informant.contextControlCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <defaultValueCode value="OP"/>
-      <fixedCode value="OP"/>
-
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>
-      </binding>
-    </element>
-    <element id="Section.informant.assignedEntity">
-      <path value="Section.informant.assignedEntity"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"/>
-      </type>
-    </element>
-    <element id="Section.informant.relatedEntity">
-      <path value="Section.informant.relatedEntity"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/RelatedEntity"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Informant"/>
       </type>
     </element>
     <element id="Section.entry">
@@ -235,9 +206,24 @@
       <constraint>
         <key value="only-one-statement" />
         <severity value="error" />
-        <human value="SHALL have no more than one of observation, regionOfInterest, observationMedia, substanceAdministration, supply, procedure, encounter, organizer or act." />
-        <expression value="(observation | regionOfInterest | observationMedia | substanceAdministration | supply | procedure | encounter | organizer | act).count() = 1" />
+        <human value="SHALL have no more than one of act, encounter, observation, observationMedia, organizer, procedure, regionOfInterest, substanceAdministration, or supply." />
+        <expression value="(act | encounter | observation | observationMedia | organizer | procedure | regionOfInterest | substanceAdministration | supply).count() = 1" />
       </constraint>
+    </element>
+    <element id="Section.entry.nullFlavor">
+      <path value="Section.entry.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
+      </binding>
     </element>
     <element id="Section.entry.typeCode">
       <path value="Section.entry.typeCode"/>
@@ -259,6 +245,50 @@
       </type>
       <defaultValueBoolean value="true"/>
     </element>
+    <element id="Section.entry.realmCode">
+      <path value="Section.entry.realmCode"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="Section.entry.typeId">
+      <path value="Section.entry.typeId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <!-- ELGA POCD_MT000040.InfrastructureRoot.typeId -->
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/InfrastructureRoot-typeId"/>
+      </type>
+    </element>
+    <element id="Section.entry.templateId">
+      <path value="Section.entry.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="Section.entry.act">
+      <path value="Section.entry.act"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Act"/>
+      </type>
+    </element>
+    <element id="Section.entry.encounter">
+      <path value="Section.entry.encounter"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Encounter"/>
+      </type>
+    </element>
     <element id="Section.entry.observation">
       <path value="Section.entry.observation"/>
       <min value="0"/>
@@ -267,20 +297,36 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Observation"/>
       </type>
     </element>
-    <element id="Section.entry.regionOfInterest">
-      <path value="Section.entry.regionOfInterest"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/RegionOfInterest"/>
-      </type>
-    </element>
     <element id="Section.entry.observationMedia">
       <path value="Section.entry.observationMedia"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ObservationMedia"/>
+      </type>
+    </element>
+    <element id="Section.entry.organizer">
+      <path value="Section.entry.organizer"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Organizer"/>
+      </type>
+    </element>
+    <element id="Section.entry.procedure">
+      <path value="Section.entry.procedure"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Procedure"/>
+      </type>
+    </element>
+    <element id="Section.entry.regionOfInterest">
+      <path value="Section.entry.regionOfInterest"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/RegionOfInterest"/>
       </type>
     </element>
     <element id="Section.entry.substanceAdministration">
@@ -299,38 +345,6 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Supply"/>
       </type>
     </element>
-    <element id="Section.entry.procedure">
-      <path value="Section.entry.procedure"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Procedure"/>
-      </type>
-    </element>
-    <element id="Section.entry.encounter">
-      <path value="Section.entry.encounter"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Encounter"/>
-      </type>
-    </element>
-    <element id="Section.entry.organizer">
-      <path value="Section.entry.organizer"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Organizer"/>
-      </type>
-    </element>
-    <element id="Section.entry.act">
-      <path value="Section.entry.act"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Act"/>
-      </type>
-    </element>
     <element id="Section.component">
       <path value="Section.component"/>
       <min value="0"/>
@@ -338,6 +352,21 @@
       <type>
         <code value="Element"/>
       </type>
+    </element>
+    <element id="Section.component.nullFlavor">
+      <path value="Section.component.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
+      </binding>
     </element>
     <element id="Section.component.typeCode">
       <path value="Section.component.typeCode"/>
@@ -362,6 +391,34 @@
       </type>
       <defaultValueBoolean value="true"/>
 
+    </element>
+    <element id="Section.component.realmCode">
+      <path value="Section.component.realmCode"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="Section.component.typeId">
+      <path value="Section.component.typeId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <!-- ELGA POCD_MT000040.InfrastructureRoot.typeId -->
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/InfrastructureRoot-typeId"/>
+      </type>
+    </element>
+    <element id="Section.component.templateId">
+      <path value="Section.component.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
     </element>
     <element id="Section.component.section">
       <path value="Section.component.section"/>
