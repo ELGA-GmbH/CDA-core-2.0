@@ -217,6 +217,11 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="StructureDefinition/EntryRelationship" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="StructureDefinition/ENXP" />
 			</reference>
 		</resource>
