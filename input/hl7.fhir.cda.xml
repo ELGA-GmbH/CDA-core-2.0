@@ -567,6 +567,11 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="StructureDefinition/Subject" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="StructureDefinition/SubjectPerson" />
 			</reference>
 		</resource>

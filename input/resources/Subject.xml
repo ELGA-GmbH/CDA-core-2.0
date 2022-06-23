@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Subject"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+    <valueUri value="urn:hl7-org:v3"/>
+  </extension>
+  <url value="http://hl7.org/fhir/cda/StructureDefinition/Subject"/>
+  <name value="CDAR2.Subject"/>
+  <title value="Subject (CDA Class)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7"/>
+  <description value="TODO"/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="Subject"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <differential>
+    <element id="Subject">
+      <path value="Subject"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Subject.nullFlavor">
+      <path value="Subject.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
+    <element id="Subject.typeCode">
+      <path value="Subject.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="SBJ"/>
+      <fixedCode value="SBJ"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationTargetSubject"/>
+      </binding>
+    </element>
+    <element id="Subject.contextControlCode">
+      <path value="Subject.contextControlCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="OP"/>
+      <fixedCode value="OP"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>
+      </binding>
+    </element>
+    <element id="Subject.realmCode">
+      <path value="Subject.realmCode"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="Subject.typeId">
+      <path value="Subject.typeId"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <!-- ELGA POCD_MT000040.InfrastructureRoot.typeId -->
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/InfrastructureRoot-typeId"/>
+      </type>
+    </element>
+    <element id="Subject.templateId">
+      <path value="Subject.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="Subject.awarenessCode">
+      <path value="Subject.awarenessCode"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-TargetAwareness"/>
+      </binding>
+    </element>
+    <element id="Subject.relatedSubject">
+      <path value="Subject.relatedSubject"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/RelatedSubject"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
