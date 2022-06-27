@@ -98,14 +98,14 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
-    <element id="Participant2.sdtcFunctionCode">
+    <element id="Participant2.functionCode">
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="functionCode"/>
       </extension>
-      <path value="Participant2.sdtcFunctionCode"/>
+      <path value="Participant2.functionCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>

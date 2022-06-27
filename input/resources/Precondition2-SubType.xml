@@ -79,14 +79,14 @@
       </type>
       <fixedCode value="EVN" />
     </element>
-    <element id="Precondition2-SubType.sdtcRealmCode">
+    <element id="Precondition2-SubType.realmCode">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="realmCode"/>
       </extension>
-      <path value="Precondition2-SubType.sdtcRealmCode"/>
+      <path value="Precondition2-SubType.realmCode"/>
       <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
       <min value="0"/>
       <max value="*"/>
@@ -94,14 +94,14 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
     </element>
-    <element id="Precondition2-SubType.sdtcTypeId">
+    <element id="Precondition2-SubType.typeId">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="typeId"/>
       </extension>
-      <path value="Precondition2-SubType.sdtcTypeId"/>
+      <path value="Precondition2-SubType.typeId"/>
       <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
       <min value="0"/>
       <max value="1"/>
@@ -110,14 +110,14 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/InfrastructureRoot-typeId"/>
       </type>
     </element>
-    <element id="Precondition2-SubType.sdtcTemplateId">
+    <element id="Precondition2-SubType.templateId">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="templateId"/>
       </extension>
-      <path value="Precondition2-SubType.sdtcTemplateId"/>
+      <path value="Precondition2-SubType.templateId"/>
       <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
       <min value="0"/>
       <max value="*"/>
@@ -125,14 +125,14 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
-    <element id="Precondition2-SubType.sdtcId">
+    <element id="Precondition2-SubType.id">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="id"/>
       </extension>
-      <path value="Precondition2-SubType.sdtcId"/>
+      <path value="Precondition2-SubType.id"/>
       <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
       <min value="1"/>
       <max value="1"/>
@@ -140,14 +140,14 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
-    <element id="Precondition2-SubType.sdtcPrecondition">
+    <element id="Precondition2-SubType.precondition">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="precondition"/>
       </extension>
-      <path value="Precondition2-SubType.sdtcPrecondition"/>
+      <path value="Precondition2-SubType.precondition"/>
       <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
       <min value="0"/>
       <max value="*"/>
@@ -155,14 +155,14 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Precondition2"/>
       </type>
     </element>
-    <element id="Precondition2-SubType.sdtcPrecondition2">
+    <element id="Precondition2-SubType.precondition2">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="precondition2"/>
       </extension>
-      <path value="Precondition2-SubType.sdtcPrecondition2"/>
+      <path value="Precondition2-SubType.precondition2"/>
       <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
       <min value="0"/>
       <max value="*"/>

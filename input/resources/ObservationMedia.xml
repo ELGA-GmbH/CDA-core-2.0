@@ -212,14 +212,14 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Precondition"/>
       </type>
     </element>
-    <element id="ObservationMedia.sdtcPrecondition2">
+    <element id="ObservationMedia.precondition2">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="precondition2"/>
       </extension>
-      <path value="ObservationMedia.sdtcPrecondition2"/>
+      <path value="ObservationMedia.precondition2"/>
       <min value="0"/>
       <max value="*"/>
       <type>

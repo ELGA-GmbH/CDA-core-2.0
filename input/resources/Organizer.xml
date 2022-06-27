@@ -118,14 +118,14 @@
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActCode"/>
       </binding>
     </element>
-    <element id="Organizer.sdtcText">
+    <element id="Organizer.text">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="text"/>
       </extension>
-      <path value="Organizer.sdtcText"/>
+      <path value="Organizer.text"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -303,14 +303,14 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/INT"/>
       </type>
     </element>
-    <element id="Organizer.component.sdtcPriorityNumber">
+    <element id="Organizer.component.priorityNumber">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="priorityNumber"/>
       </extension>
-      <path value="Organizer.component.sdtcPriorityNumber"/>
+      <path value="Organizer.component.priorityNumber"/>
       <min value="0"/>
       <max value="1"/>
       <type>

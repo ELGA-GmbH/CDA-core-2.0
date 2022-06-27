@@ -118,14 +118,14 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
       </type>
     </element>
-    <element id="Patient.sdtcDesc">
+    <element id="Patient.desc">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="desc"/>
       </extension>
-      <path value="Patient.sdtcDesc"/>
+      <path value="Patient.desc"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -152,56 +152,56 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
       </type>
     </element>
-    <element id="Patient.sdtcDeceasedInd">
+    <element id="Patient.deceasedInd">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="deceasedInd"/>
       </extension>
-      <path value="Patient.sdtcDeceasedInd"/>
+      <path value="Patient.deceasedInd"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
       </type>
     </element>
-    <element id="Patient.sdtcDeceasedTime">
+    <element id="Patient.deceasedTime">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="deceasedTime"/>
       </extension>
-      <path value="Patient.sdtcDeceasedTime"/>
+      <path value="Patient.deceasedTime"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
       </type>
     </element>
-    <element id="Patient.sdtcMultipleBirthInd">
+    <element id="Patient.multipleBirthInd">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="multipleBirthInd"/>
       </extension>
-      <path value="Patient.sdtcMultipleBirthInd"/>
+      <path value="Patient.multipleBirthInd"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
       </type>
     </element>
-    <element id="Patient.sdtcMultipleBirthOrderNumber">
+    <element id="Patient.multipleBirthOrderNumber">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="multipleBirthOrderNumber"/>
       </extension>
-      <path value="Patient.sdtcMultipleBirthOrderNumber"/>
+      <path value="Patient.multipleBirthOrderNumber"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -244,14 +244,14 @@
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-Race"/>
       </binding>
     </element>
-    <element id="Patient.sdtcRaceCode">
+    <element id="Patient.raceCode">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="raceCode"/>
       </extension>
-      <path value="Patient.sdtcRaceCode"/>
+      <path value="Patient.raceCode"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -274,14 +274,14 @@
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-Ethnicity"/>
       </binding>
     </element>
-    <element id="Patient.sdtcEthnicGroupCode">
+    <element id="Patient.ethnicGroupCode">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="ethnicGroupCode"/>
       </extension>
-      <path value="Patient.sdtcEthnicGroupCode"/>
+      <path value="Patient.ethnicGroupCode"/>
       <min value="0"/>
       <max value="*"/>
       <type>

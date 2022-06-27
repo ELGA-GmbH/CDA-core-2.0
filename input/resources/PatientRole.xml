@@ -92,14 +92,14 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
-    <element id="PatientRole.sdtcIdentifiedBy">
+    <element id="PatientRole.identifiedBy">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="identifiedBy"/>
       </extension>
-      <path value="PatientRole.sdtcIdentifiedBy"/>
+      <path value="PatientRole.identifiedBy"/>
       <min value="0"/>
       <max value="*"/>
       <type>

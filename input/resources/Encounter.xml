@@ -239,14 +239,14 @@
       </type>
     </element>
     <!-- ELGA sdtc:precondition2 TODO push to upstream -->
-    <element id="Encounter.sdtcPrecondition2">
+    <element id="Encounter.precondition2">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="precondition2"/>
       </extension>
-      <path value="Encounter.sdtcPrecondition2"/>
+      <path value="Encounter.precondition2"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -254,14 +254,14 @@
       </type>
     </element>
     <!-- ELGA sdtc:inFulfillmentOf1 TODO push to upstream -->
-    <element id="Encounter.sdtcInFulfillmentOf1">
+    <element id="Encounter.inFulfillmentOf1">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="inFulfillmentOf1"/>
       </extension>
-      <path value="Encounter.sdtcInFulfillmentOf1"/>
+      <path value="Encounter.inFulfillmentOf1"/>
       <min value="0"/>
       <max value="*"/>
       <type>

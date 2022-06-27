@@ -120,14 +120,14 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
     </element>
-    <element id="LegalAuthenticator.sdtcSignatureText">
+    <element id="LegalAuthenticator.signatureText">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="signatureText"/>
       </extension>
-      <path value="LegalAuthenticator.sdtcSignatureText"/>
+      <path value="LegalAuthenticator.signatureText"/>
       <min value="0"/>
       <max value="1"/>
       <type>
