@@ -29,7 +29,6 @@
       <min value="1"/>
       <max value="1"/>
     </element>
-    <!-- ELGA Act.nullFlavor TODO push to upstream-->
     <element id="Act.nullFlavor">
       <path value="Act.nullFlavor"/>
       <representation value="xmlAttr"/>

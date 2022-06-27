@@ -35,7 +35,6 @@
         <source value=""/>
       </constraint>
     </element>
-    <!-- ELGA AssignedAuthor.nullFlavor TODO push to upstream-->
     <element id="AssignedAuthor.nullFlavor">
       <path value="AssignedAuthor.nullFlavor"/>
       <representation value="xmlAttr"/>

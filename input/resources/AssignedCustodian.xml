@@ -28,7 +28,6 @@
       <min value="1"/>
       <max value="1"/>
     </element>
-    <!-- ELGA AssignedCustodian.nullFlavor TODO push to upstream-->
     <element id="AssignedCustodian.nullFlavor">
       <path value="AssignedCustodian.nullFlavor"/>
       <representation value="xmlAttr"/>
