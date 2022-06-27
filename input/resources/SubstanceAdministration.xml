@@ -34,13 +34,10 @@
     <element id="SubstanceAdministration.nullFlavor">
       <path value="SubstanceAdministration.nullFlavor"/>
       <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
       <min value="0"/>
       <max value="1"/>
-      <base>
-        <path value="ANY.nullFlavor"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
       <type>
         <code value="code"/>
       </type>
@@ -279,13 +276,10 @@
     <element id="SubstanceAdministration.consumable.nullFlavor">
       <path value="SubstanceAdministration.consumable.nullFlavor"/>
       <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
       <min value="0"/>
       <max value="1"/>
-      <base>
-        <path value="ANY.nullFlavor"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
       <type>
         <code value="code"/>
       </type>
@@ -400,14 +394,14 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Precondition"/>
       </type>
     </element>
-    <element id="Act.inFulfillmentOf1">
+    <element id="SubstanceAdministration.inFulfillmentOf1">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="inFulfillmentOf1"/>
       </extension>
-      <path value="Act.inFulfillmentOf1"/>
+      <path value="SubstanceAdministration.inFulfillmentOf1"/>
       <min value="0"/>
       <max value="*"/>
       <type>

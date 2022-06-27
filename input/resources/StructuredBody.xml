@@ -32,13 +32,10 @@
     <element id="StructuredBody.nullFlavor">
       <path value="StructuredBody.nullFlavor"/>
       <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
       <min value="0"/>
       <max value="1"/>
-      <base>
-        <path value="ANY.nullFlavor"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
       <type>
         <code value="code"/>
       </type>
@@ -138,13 +135,10 @@
     <element id="StructuredBody.component.nullFlavor">
       <path value="StructuredBody.component.nullFlavor"/>
       <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
       <min value="0"/>
       <max value="1"/>
-      <base>
-        <path value="ANY.nullFlavor"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
       <type>
         <code value="code"/>
       </type>
