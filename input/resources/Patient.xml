@@ -115,7 +115,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/PN"/>
       </type>
     </element>
     <element id="Patient.desc">
