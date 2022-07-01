@@ -60,7 +60,7 @@
       <fixedCode value="COMP"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationType"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActRelationshipHasComponent"/>
       </binding>
     </element>
     <element id="Component2.contextConductionInd">
