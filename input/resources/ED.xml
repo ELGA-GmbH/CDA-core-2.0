@@ -29,7 +29,8 @@
       <min value="1"/>
       <max value="*"/>
     </element>
-    <element id="ED.charset">
+    <!-- in the austian schema there is no element charset, nowhere even once -->
+    <!-- <element id="ED.charset">
       <path value="ED.charset"/>
       <representation value="xmlAttr"/>
       <label value="Charset"/>
@@ -39,7 +40,7 @@
       <type>
         <code value="code"/>
       </type>
-    </element>
+    </element> -->
     <element id="ED.compression">
       <path value="ED.compression"/>
       <representation value="xmlAttr"/>
