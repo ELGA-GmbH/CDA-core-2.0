@@ -973,7 +973,7 @@ History:
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
-	<xs:complexType name="BXIT_IVL_PQ">
+	<xs:complexType name="BXIT_IVL_pq">
 		<xs:complexContent>
 			<xs:extension base="IVL_PQ">
 				<xs:attribute name="qty" type="int" use="optional" default="1">
