@@ -29,7 +29,7 @@
       <min value="1"/>
       <max value="*"/>
     </element>
-    <element id="PQ.inclusive">
+    <element id="PQ.inclusive"><!-- not known in austrian schema -->
       <path value="PQ.inclusive"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
@@ -38,7 +38,7 @@
         <code value="boolean"/>
       </type>
     </element>
-    <element id="PQ.unit">
+    <element id="PQ.unit"> <!-- the default should be 1, cant be stated in a ressource -->
       <path value="PQ.unit"/>
       <representation value="xmlAttr"/>
       <label value="Unit of Measure"/>

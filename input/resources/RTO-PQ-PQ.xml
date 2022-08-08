@@ -26,21 +26,23 @@
       <path value="RTO_PQ_PQ.numerator"/>
       <label value="Numerator"/>
       <definition value="The quantity that is being divided in the ratio. The default is the integer number 1 (one.)"/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
       </type>
+      <defaultValueCode value="1">
     </element>
     <element id="RTO_PQ_PQ.denominator">
       <path value="RTO_PQ_PQ.denominator"/>
       <label value="Denominator"/>
       <definition value="The quantity that devides the numerator in the ratio. The default is the integer number 1 (one.) The denominator must not be zero."/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
       </type>
+      <defaultValueCode value="1">
     </element>
   </differential>
 </StructureDefinition>
