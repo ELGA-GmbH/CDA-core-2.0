@@ -31,6 +31,7 @@
       <type>
         <code value="code"/>
       </type>
+      <defaultValueCode value="I"/>
     </element>
   </differential>
 </StructureDefinition>

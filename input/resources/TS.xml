@@ -20,7 +20,7 @@
   <kind value="logical"/>
   <abstract value="false"/>
   <type value="TS"/>
-  <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/ANY"/>
+  <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/QTY"/>
   <derivation value="specialization"/>
   <differential>
     <element id="TS">
@@ -45,7 +45,7 @@
         <code value="dateTime"/>
       </type>
     </element>
-    <element id="TS.inclusive">
+    <element id="TS.inclusive"><!-- comes from IVXB_TS, that datatype is missing fully in ressources, so TS gets its one attribute -->
       <path value="TS.inclusive"/>
       <representation value="xmlAttr"/>
       <definition value="Specifies whether the limit is included in the interval (interval is closed) or excluded from the interval (interval is open)."/>
