@@ -47,7 +47,7 @@
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityNameUse"/>
       </binding>
     </element>
-    <element id="EN.delimiter">
+    <element id="EN.delimiter"><!-- following elements are in the schema inside a choice, for the only reason of having no order, not sure if this is also true here -->
       <path value="EN.delimiter"/>
       <min value="0"/>
       <max value="*"/>
@@ -87,7 +87,8 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
       </type>
     </element>
-    <element id="EN.other">
+    <!-- cant find following element in the schema -->
+    <!-- <element id="EN.other">
       <path value="EN.other"/>
       <representation value="xmlText"/>
       <min value="0"/>
@@ -96,7 +97,7 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="EN.validTime">
+    <element id="EN.validTime"> -->
       <path value="EN.validTime"/>
       <label value="Valid Time"/>
       <definition value="An interval of time specifying the time during which the name is or was used for the entity. This accomodates the fact that people change names for people, places and things."/>
