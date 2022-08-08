@@ -11,7 +11,7 @@
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
   <url value="http://hl7.org/fhir/cda/StructureDefinition/INT-POS"/>
-  <name value="INT_POS"/>
+  <name value="INT_POS"/><!-- is missing completly in our austrian schema (why? there is also one in ArtDecor: https://art-decor.org/mediawiki/index.php?title=DTr1_INT.POS) -->
   <title value="INT_POS: Positive integer numbers (V3 Data Type)"/>
   <status value="active"/>
   <experimental value="false"/>
