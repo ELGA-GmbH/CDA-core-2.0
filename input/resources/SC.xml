@@ -36,7 +36,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="string"/>
+        <code value="code"/>
       </type>
     </element>
     <element id="SC.codeSystem">
