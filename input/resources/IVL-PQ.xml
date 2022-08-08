@@ -14,7 +14,7 @@
   <kind value="logical"/>
   <abstract value="false"/>
   <type value="IVL_PQ"/>
-  <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/ANY"/>
+  <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
   <derivation value="specialization"/>
   <differential>
     <element id="IVL_PQ">
@@ -22,36 +22,14 @@
       <min value="1"/>
       <max value="*"/>
     </element>
-    <element id="IVL_PQ.unit">
-      <path value="IVL_PQ.unit"/>
+    <element id="IVL_INT.operator"><!-- added from motherclass SCXM_PQ, default value "I" cant be specified in ressource -->
+      <path value="IVL_INT.operator"/>
       <representation value="xmlAttr"/>
-      <label value="Unit of Measure"/>
-      <definition value="The unit of measure specified in the Unified Code for Units of Measure (UCUM) []."/>
+      <label value="Operator"/>
       <min value="0"/>
       <max value="1"/>
-      <base>
-        <path value="IVL_PQ.unit"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
       <type>
         <code value="code"/>
-      </type>
-    </element>
-    <element id="IVL_PQ.value">
-      <path value="IVL_PQ.value"/>
-      <representation value="xmlAttr"/>
-      <label value="Maginitude Value"/>
-      <definition value="The magnitude of the quantity measured in terms of the unit."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="PQ.value"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="decimal"/>
       </type>
     </element>
     <element id="IVL_PQ.low">
@@ -85,6 +63,16 @@
       </type>
     </element>
     <element id="IVL_PQ.center">
+      <path value="IVL_PQ.center"/>
+      <label value="Central Value"/>
+      <definition value="The arithmetic mean of the interval (low plus high divided by 2). The purpose of distinguishing the center as a semantic property is for conversions of intervals from and to point values."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
+      </type>
+    </element>
+    <element id="IVL_PQ.center"><!-- added from motherclass QTY -->
       <path value="IVL_PQ.center"/>
       <label value="Central Value"/>
       <definition value="The arithmetic mean of the interval (low plus high divided by 2). The purpose of distinguishing the center as a semantic property is for conversions of intervals from and to point values."/>

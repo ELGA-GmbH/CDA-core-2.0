@@ -37,6 +37,16 @@
         <code value="integer"/>
       </type>
     </element>
+    <element id="IVL_INT.operator"><!-- added from motherclass SCXM_INT, default value "I" cant be specified in ressource -->
+      <path value="IVL_INT.operator"/>
+      <representation value="xmlAttr"/>
+      <label value="Operator"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
     <element id="IVL_INT.low">
       <path value="IVL_INT.low"/>
       <label value="Low Boundary"/>
