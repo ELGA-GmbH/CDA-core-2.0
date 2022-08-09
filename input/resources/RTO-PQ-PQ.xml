@@ -31,7 +31,7 @@
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
       </type>
-      <defaultValueCode value="1">
+      <defaultValueCode value="1"/>
     </element>
     <element id="RTO_PQ_PQ.denominator">
       <path value="RTO_PQ_PQ.denominator"/>
@@ -42,7 +42,7 @@
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
       </type>
-      <defaultValueCode value="1">
+      <defaultValueCode value="1"/>
     </element>
   </differential>
 </StructureDefinition>

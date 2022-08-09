@@ -22,8 +22,8 @@
       <min value="1"/>
       <max value="*"/>
     </element>
-    <element id="IVL_INT.operator"><!-- added from motherclass SCXM_PQ, default value "I" cant be specified in ressource -->
-      <path value="IVL_INT.operator"/>
+    <element id="IVL_PQ.operator"><!-- added from motherclass SCXM_PQ, default value "I" cant be specified in ressource -->
+      <path value="IVL_PQ.operator"/>
       <representation value="xmlAttr"/>
       <label value="Operator"/>
       <min value="0"/>
