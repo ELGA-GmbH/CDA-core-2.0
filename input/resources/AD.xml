@@ -457,8 +457,8 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP-PRECINCT"/>
       </type>
     </element>
-    <!-- no resemblance in schema/xsd
-      <element id="AD.other">
+    <!-- no resemblance in schema/xsd -->
+    <!-- <element id="AD.other">
       <path value="AD.other"/>
       <representation value="xmlText"/>
       <definition value="Textual representation of (part of) the address"/>
