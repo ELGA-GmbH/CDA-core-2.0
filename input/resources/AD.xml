@@ -90,24 +90,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP-DELIMITER"/>
       </type>
-    </element>
-    <element id="AD.delimiter.partType">
-      <path value="AD.delimiter.partType"/>
-      <representation value="xmlAttr"/>
-      <definition value="Specifies the type of the address part"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="AD.delimiter.partType"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="DEL"/>
     </element>
     <element id="AD.country">
       <path value="AD.country"/>
@@ -120,24 +104,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP-COUNTRY"/>
       </type>
-    </element>
-    <element id="AD.country.partType">
-      <path value="AD.country.partType"/>
-      <representation value="xmlAttr"/>
-      <definition value="Specifies the type of the address part"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="AD.country.partType"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="CNT"/>
     </element>
     <element id="AD.state">
       <path value="AD.state"/>
@@ -150,24 +118,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP-STATE"/>
       </type>
-    </element>
-    <element id="AD.state.partType">
-      <path value="AD.state.partType"/>
-      <representation value="xmlAttr"/>
-      <definition value="Specifies the type of the address part"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="AD.state.partType"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="STA"/>
     </element>
     <element id="AD.county">
       <path value="AD.county"/>
@@ -180,24 +132,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP-COUNTY"/>
       </type>
-    </element>
-    <element id="AD.county.partType">
-      <path value="AD.county.partType"/>
-      <representation value="xmlAttr"/>
-      <definition value="Specifies the type of the address part"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="AD.county.partType"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="CPA"/>
     </element>
     <element id="AD.city">
       <path value="AD.city"/>
@@ -210,24 +146,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP-CITY"/>
       </type>
-    </element>
-    <element id="AD.city.partType">
-      <path value="AD.city.partType"/>
-      <representation value="xmlAttr"/>
-      <definition value="Specifies the type of the address part"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="AD.city.partType"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="CTY"/>
     </element>
     <element id="AD.postalCode">
       <path value="AD.postalCode"/>
@@ -240,24 +160,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP-POSTALCODE"/>
       </type>
-    </element>
-    <element id="AD.postalCode.partType">
-      <path value="AD.postalCode.partType"/>
-      <representation value="xmlAttr"/>
-      <definition value="Specifies the type of the address part"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="AD.postalCode.partType"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="ZIP"/>
     </element>
     <element id="AD.streetAddressLine">
       <path value="AD.streetAddressLine"/>
@@ -270,24 +174,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP-STREETADDRESSLINE"/>
       </type>
-    </element>
-    <element id="AD.streetAddressLine.partType">
-      <path value="AD.streetAddressLine.partType"/>
-      <representation value="xmlAttr"/>
-      <definition value="Specifies the type of the address part"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="AD.streetAddressLine.partType"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="SAL"/>
     </element>
     <element id="AD.houseNumber">
       <path value="AD.houseNumber"/>
@@ -300,24 +188,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP-HOUSENUMBER"/>
       </type>
-    </element>
-    <element id="AD.houseNumber.partType">
-      <path value="AD.houseNumber.partType"/>
-      <representation value="xmlAttr"/>
-      <definition value="Specifies the type of the address part"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="AD.houseNumber.partType"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="BNR"/>
     </element>
     <element id="AD.houseNumberNumeric">
       <path value="AD.houseNumberNumeric"/>
@@ -330,24 +202,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP-HOUSENUMBERNUMERIC"/>
       </type>
-    </element>
-    <element id="AD.houseNumberNumeric.partType">
-      <path value="AD.houseNumberNumeric.partType"/>
-      <representation value="xmlAttr"/>
-      <definition value="Specifies the type of the address part"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="AD.houseNumberNumeric.partType"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="BNN"/>
     </element>
     <element id="AD.direction">
       <path value="AD.direction"/>
@@ -360,24 +216,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP-DIRECTION"/>
       </type>
-    </element>
-    <element id="AD.direction.partType">
-      <path value="AD.direction.partType"/>
-      <representation value="xmlAttr"/>
-      <definition value="Specifies the type of the address part"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="AD.direction.partType"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="DIR"/>
     </element>
     <element id="AD.streetName">
       <path value="AD.streetName"/>
@@ -390,24 +230,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP-STREETNAME"/>
       </type>
-    </element>
-    <element id="AD.streetName.partType">
-      <path value="AD.streetName.partType"/>
-      <representation value="xmlAttr"/>
-      <definition value="Specifies the type of the address part"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="AD.streetName.partType"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="STR"/>
     </element>
     <element id="AD.streetNameBase">
       <path value="AD.streetNameBase"/>
@@ -420,24 +244,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP-STREETNAMEBASE"/>
       </type>
-    </element>
-    <element id="AD.streetNameBase.partType">
-      <path value="AD.streetNameBase.partType"/>
-      <representation value="xmlAttr"/>
-      <definition value="Specifies the type of the address part"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="AD.streetNameBase.partType"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="STB"/>
     </element>
     <element id="AD.streetNameType">
       <path value="AD.streetNameType"/>
@@ -450,24 +258,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP-STREETNAMETYPE"/>
       </type>
-    </element>
-    <element id="AD.streetNameType.partType">
-      <path value="AD.streetNameType.partType"/>
-      <representation value="xmlAttr"/>
-      <definition value="Specifies the type of the address part"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="AD.streetNameType.partType"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="STTYP"/>
     </element>
     <element id="AD.additionalLocator">
       <path value="AD.additionalLocator"/>
@@ -480,24 +272,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP-ADDITIONALLOCATOR"/>
       </type>
-    </element>
-    <element id="AD.additionalLocator.partType">
-      <path value="AD.additionalLocator.partType"/>
-      <representation value="xmlAttr"/>
-      <definition value="Specifies the type of the address part"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="AD.additionalLocator.partType"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="ADL"/>
     </element>
     <element id="AD.unitID">
       <path value="AD.unitID"/>
@@ -510,24 +286,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP-UNITID"/>
       </type>
-    </element>
-    <element id="AD.unitID.partType">
-      <path value="AD.unitID.partType"/>
-      <representation value="xmlAttr"/>
-      <definition value="Specifies the type of the address part"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="AD.unitID.partType"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="UNID"/>
     </element>
     <element id="AD.unitType">
       <path value="AD.unitType"/>
@@ -540,24 +300,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP-UNITTYPE"/>
       </type>
-    </element>
-    <element id="AD.unitType.partType">
-      <path value="AD.unitType.partType"/>
-      <representation value="xmlAttr"/>
-      <definition value="Specifies the type of the address part"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="AD.unitType.partType"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="UNIT"/>
     </element>
     <element id="AD.careOf">
       <path value="AD.careOf"/>
@@ -570,24 +314,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP-CAREOF"/>
       </type>
-    </element>
-    <element id="AD.careOf.partType">
-      <path value="AD.careOf.partType"/>
-      <representation value="xmlAttr"/>
-      <definition value="Specifies the type of the address part"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="AD.careOf.partType"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="CAR"/>
     </element>
     <element id="AD.censusTract">
       <path value="AD.censusTract"/>
@@ -600,24 +328,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP-CENSUSTRACT"/>
       </type>
-    </element>
-    <element id="AD.censusTract.partType">
-      <path value="AD.censusTract.partType"/>
-      <representation value="xmlAttr"/>
-      <definition value="Specifies the type of the address part"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="AD.censusTract.partType"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="CEN"/>
     </element>
     <element id="AD.deliveryAddressLine">
       <path value="AD.deliveryAddressLine"/>
@@ -630,24 +342,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP-DELIVERYADDRESSLINE"/>
       </type>
-    </element>
-    <element id="AD.deliveryAddressLine.partType">
-      <path value="AD.deliveryAddressLine.partType"/>
-      <representation value="xmlAttr"/>
-      <definition value="Specifies the type of the address part"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="AD.deliveryAddressLine.partType"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="DAL"/>
     </element>
     <element id="AD.deliveryInstallationType">
       <path value="AD.deliveryInstallationType"/>
@@ -660,24 +356,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP-DELIVERYINSTALLATIONTYPE"/>
       </type>
-    </element>
-    <element id="AD.deliveryInstallationType.partType">
-      <path value="AD.deliveryInstallationType.partType"/>
-      <representation value="xmlAttr"/>
-      <definition value="Specifies the type of the address part"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="AD.deliveryInstallationType.partType"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="DINST"/>
     </element>
     <element id="AD.deliveryInstallationArea">
       <path value="AD.deliveryInstallationArea"/>
@@ -690,24 +370,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP-DELIVERYINSTALLATIONAREA"/>
       </type>
-    </element>
-    <element id="AD.deliveryInstallationArea.partType">
-      <path value="AD.deliveryInstallationArea.partType"/>
-      <representation value="xmlAttr"/>
-      <definition value="Specifies the type of the address part"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="AD.deliveryInstallationArea.partType"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="DINSTA"/>
     </element>
     <element id="AD.deliveryInstallationQualifier">
       <path value="AD.deliveryInstallationQualifier"/>
@@ -720,24 +384,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP-DELIVERYINSTALLATIONQUALIFIER"/>
       </type>
-    </element>
-    <element id="AD.deliveryInstallationQualifier.partType">
-      <path value="AD.deliveryInstallationQualifier.partType"/>
-      <representation value="xmlAttr"/>
-      <definition value="Specifies the type of the address part"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="AD.deliveryInstallationQualifier.partType"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="DINSTQ"/>
     </element>
     <element id="AD.deliveryMode">
       <path value="AD.deliveryMode"/>
@@ -750,24 +398,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP-DELIVERYMODE"/>
       </type>
-    </element>
-    <element id="AD.deliveryMode.partType">
-      <path value="AD.deliveryMode.partType"/>
-      <representation value="xmlAttr"/>
-      <definition value="Specifies the type of the address part"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="AD.deliveryMode.partType"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="DMOD"/>
     </element>
     <element id="AD.deliveryModeIdentifier">
       <path value="AD.deliveryModeIdentifier"/>
@@ -780,24 +412,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP-DELIVERYMODEIDENTIFIER"/>
       </type>
-    </element>
-    <element id="AD.deliveryModeIdentifier.partType">
-      <path value="AD.deliveryModeIdentifier.partType"/>
-      <representation value="xmlAttr"/>
-      <definition value="Specifies the type of the address part"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="AD.deliveryModeIdentifier.partType"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="DMODID"/>
     </element>
     <element id="AD.buildingNumberSuffix">
       <path value="AD.buildingNumberSuffix"/>
@@ -810,24 +426,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP-BUILDINGNUMBERSUFFIX"/>
       </type>
-    </element>
-    <element id="AD.buildingNumberSuffix.partType">
-      <path value="AD.buildingNumberSuffix.partType"/>
-      <representation value="xmlAttr"/>
-      <definition value="Specifies the type of the address part"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="AD.buildingNumberSuffix.partType"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="BNS"/>
     </element>
     <element id="AD.postBox">
       <path value="AD.postBox"/>
@@ -840,24 +440,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP-POSTBOX"/>
       </type>
-    </element>
-    <element id="AD.postBox.partType">
-      <path value="AD.postBox.partType"/>
-      <representation value="xmlAttr"/>
-      <definition value="Specifies the type of the address part"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="AD.postBox.partType"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="POB"/>
     </element>
     <element id="AD.precinct">
       <path value="AD.precinct"/>
@@ -870,24 +454,8 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP-PRECINCT"/>
       </type>
-    </element>
-    <element id="AD.precinct.partType">
-      <path value="AD.precinct.partType"/>
-      <representation value="xmlAttr"/>
-      <definition value="Specifies the type of the address part"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="AD.precinct.partType"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="PRE"/>
     </element>
     <!-- no resemblance in schema/xsd
       <element id="AD.other">
