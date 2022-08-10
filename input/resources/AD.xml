@@ -473,11 +473,8 @@
         <code value="string"/>
       </type>
     </element>-->
-    <element id="AD.useablePeriod[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-defaulttype">
-        <valueString value="SXPR-TS"/>
-      </extension>
-      <path value="AD.useablePeriod[x]"/>
+    <element id="AD.useablePeriod">
+      <path value="AD.useablePeriod"/>
       <representation value="typeAttr"/>
       <label value="Useable Period"/>
       <definition value="A General Timing Specification (GTS) specifying the periods of time during which the address can be used. This is used to specify different addresses for different times of the week or year."/>
