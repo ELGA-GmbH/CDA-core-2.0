@@ -457,8 +457,9 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ADXP-PRECINCT"/>
       </type>
     </element>
-    <!-- no resemblance in XSD -->
-    <!-- <element id="AD.other">
+    <!-- There exists no resemblance in the XSD. However, this element is necessary
+         in order to allow simple text within an element of the AD type. -->
+    <element id="AD.other">
       <path value="AD.other"/>
       <representation value="xmlText"/>
       <definition value="Textual representation of (part of) the address"/>
@@ -472,7 +473,7 @@
       <type>
         <code value="string"/>
       </type>
-    </element>-->
+    </element>
     <element id="AD.useablePeriod">
       <path value="AD.useablePeriod"/>
       <representation value="typeAttr"/>

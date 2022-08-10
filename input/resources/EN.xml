@@ -88,8 +88,9 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ENXP-SUFFIX"/>
       </type>
     </element>
-    <!-- no resemblance in XSD -->
-    <!-- <element id="EN.other">
+    <!-- There exists no resemblance in the XSD. However, this element is necessary
+         in order to allow simple text within an element of the EN type. -->
+    <element id="EN.other">
       <path value="EN.other"/>
       <representation value="xmlText"/>
       <min value="0"/>
@@ -97,7 +98,7 @@
       <type>
         <code value="string"/>
       </type>
-    </element>-->
+    </element>
     <element id="EN.validTime">
       <path value="EN.validTime"/>
       <label value="Valid Time"/>
