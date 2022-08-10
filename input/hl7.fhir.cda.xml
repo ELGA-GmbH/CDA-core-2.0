@@ -362,6 +362,31 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="StructureDefinition/ENXP-DELIMITER" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/ENXP-FAMILY" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/ENXP-GIVEN" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/ENXP-PREFIX" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/ENXP-SUFFIX" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="StructureDefinition/ExternalAct" />
 			</reference>
 		</resource>
