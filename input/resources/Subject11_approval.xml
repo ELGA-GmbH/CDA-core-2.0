@@ -1,0 +1,10 @@
+    <xs:complexType name="COCT_MT230100UV.Subject11">
+		<xs:sequence>
+			<xs:group ref="hl7v3:InfrastructureRootElements"/>
+			<xs:element name="approval" type="pharm:COCT_MT230100UV.Approval" nillable="true"
+				minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+		<!-- <xs:attributeGroup ref="hl7v3:InfrastructureRootAttributes"/> -->
+		<xs:attribute name="nullFlavor" type="hl7v3:NullFlavor" use="optional"/>
+		<xs:attribute name="typeCode" type="hl7v3:ParticipationTargetSubject" use="required"/>
+	</xs:complexType>

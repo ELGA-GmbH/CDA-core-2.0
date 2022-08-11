@@ -25,3 +25,5 @@ Files/folders related to the FHIR logical models:
 * _updatePublisher.bat
 * ig.ini
 * publish.bat
+
+java -jar ../validator_cli.jar -version 4.0.1 -ig output/package.tgz examples/Lab_Allgemeiner_Laborbefund.xml

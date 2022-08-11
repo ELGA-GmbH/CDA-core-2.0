@@ -126,7 +126,62 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
       </type>
     </element>
-    <!-- TODO IHE Pharmacy extension -->
+    <element id="Material.desc">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:ihe:pharm:medication"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="desc"/>
+      </extension>
+      <path value="Material.desc"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+      </type>
+    </element>
+    <element id="Material.riskCode">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:ihe:pharm:medication"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="riskCode"/>
+      </extension>
+      <path value="Material.riskCode"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+      </type>
+    </element>
+    <element id="Material.handlingCode">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:ihe:pharm:medication"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="handlingCode"/>
+      </extension>
+      <path value="Material.handlingCode"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+      </type>
+    </element>
+    <element id="Material.formCode">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:ihe:pharm:medication"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="formCode"/>
+      </extension>
+      <path value="Material.formCode"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+      </type>
+    </element>
     <element id="Material.lotNumberText">
       <path value="Material.lotNumberText"/>
       <min value="0"/>
@@ -135,6 +190,47 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
       </type>
     </element>
-    <!-- TODO IHE Pharmacy extension -->
+    <element id="Material.expirationTime">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:ihe:pharm:medication"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="expirationTime"/>
+      </extension>
+      <path value="Material.expirationTime"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"/>
+      </type>
+    </element>
+    <element id="Material.stabilityTime">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:ihe:pharm:medication"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="stabilityTime"/>
+      </extension>
+      <path value="Material.stabilityTime"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"/>
+      </type>
+    </element>
+    <element id="Material.asDistributedProduct">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:ihe:pharm:medication"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="asDistributedProduct"/>
+      </extension>
+      <path value="Material.asDistributedProduct"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmDistributedProduct"/>
+      </type>
+    </element>
   </differential>
 </StructureDefinition>

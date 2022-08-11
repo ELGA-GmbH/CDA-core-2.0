@@ -1,0 +1,164 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="PharmPackagedMedicine"/>
+   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+      <valueUri value="urn:ihe:pharm:medication"/>
+   </extension>
+   <url value="http://hl7.org/fhir/cda/StructureDefinition/PharmPackagedMedicine"/>
+   <name value="CDAR2.PharmPackagedMedicine"/>
+   <title value="PharmPackagedMedicine (CDA Pharm Class)"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <publisher value="HL7"/>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="PharmPackagedMedicine"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+   <derivation value="specialization"/>
+   <differential>
+      <element id="PharmPackagedMedicine">
+         <path value="PharmPackagedMedicine"/>
+      </element>
+      <element id="PharmPackagedMedicine.nullFlavor">
+         <path value="PharmPackagedMedicine.nullFlavor"/>
+         <representation value="xmlAttr"/>
+         <label value="Exceptional Value Detail"/>
+         <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="code"/>
+         </type>
+         <binding>
+            <strength value="required"/>
+            <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
+         </binding>
+      </element>
+      <element id="PharmPackagedMedicine.classCode">
+         <path value="PharmPackagedMedicine.classCode"/>
+         <representation value="xmlAttr"/>
+         <min value="1"/>
+         <max value="1"/>
+         <type>
+            <code value="code"/>
+         </type>
+         <binding>
+            <strength value="required"/>
+            <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityClassContainer"/>
+         </binding>
+      </element>
+      <element id="PharmPackagedMedicine.determinerCode">
+         <path value="PharmPackagedMedicine.determinerCode"/>
+         <representation value="xmlAttr"/>
+         <min value="1"/>
+         <max value="1"/>
+         <type>
+            <code value="code"/>
+         </type>
+         <binding>
+            <strength value="required"/>
+            <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityDeterminer"/>
+         </binding>
+      </element>
+      <element id="PharmPackagedMedicine.id">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+             <valueUri value="urn:ihe:pharm:medication"/>
+          </extension>
+          <path value="PharmPackagedMedicine.id"/>
+          <min value="0"/>
+          <max value="1"/>
+          <type>
+             <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+          </type>
+       </element>
+      <element id="PharmPackagedMedicine.code">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+            <valueUri value="urn:ihe:pharm:medication"/>
+         </extension>
+         <path value="PharmPackagedMedicine.code"/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+         </type>
+      </element>
+      <element id="PharmPackagedMedicine.name">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+            <valueUri value="urn:ihe:pharm:medication"/>
+         </extension>
+         <path value="PharmPackagedMedicine.name"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/TN"/>
+         </type>
+      </element>
+      <element id="PharmPackagedMedicine.formCode">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+            <valueUri value="urn:ihe:pharm:medication"/>
+         </extension>
+         <path value="PharmPackagedMedicine.formCode"/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+         </type>
+      </element>
+      <element id="PharmPackagedMedicine.lotNumberText">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+            <valueUri value="urn:ihe:pharm:medication"/>
+         </extension>
+         <path value="PharmPackagedMedicine.lotNumberText"/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
+         </type>
+      </element>
+      <element id="PharmPackagedMedicine.capacityQuantity">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+            <valueUri value="urn:ihe:pharm:medication"/>
+         </extension>
+         <path value="PharmPackagedMedicine.capacityQuantity"/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
+         </type>
+      </element>
+      <element id="PharmPackagedMedicine.capTypeCode">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+            <valueUri value="urn:ihe:pharm:medication"/>
+         </extension>
+         <path value="PharmPackagedMedicine.capTypeCode"/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+         </type>
+      </element>
+      <element id="PharmPackagedMedicine.asManufacturedProduct">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+            <valueUri value="urn:ihe:pharm:medication"/>
+         </extension>
+         <path value="PharmPackagedMedicine.asManufacturedProduct"/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmManufacturedProduct"/>
+         </type>
+      </element>
+
+
+      <element id="PharmPackagedMedicine.asSuperContent">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+            <valueUri value="urn:ihe:pharm:medication"/>
+         </extension>
+         <path value="PharmPackagedMedicine.asSuperContent"/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmSuperContent"/>
+         </type>
+      </element>
+   </differential>
+</StructureDefinition>

@@ -780,6 +780,21 @@
 				<reference value="StructureDefinition/TS" />
 			</reference>
 		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmDistributedProduct" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmManufacturer" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmRelatedManufacturer" />
+			</reference>
+		</resource>
 		<page>
 			<nameUrl value="index.html"/>
 			<title value="IG Home Page"/>
