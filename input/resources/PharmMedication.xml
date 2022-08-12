@@ -1,40 +1,25 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-   <id value="PharmMedicineClass"/>
+   <id value="PharmMedication"/>
    <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-      <valueUri value="urn:ihe:pharm"/>
+      <valueUri value="urn:ihe:pharm:medication"/>
    </extension>
-   <url value="http://hl7.org/fhir/cda/StructureDefinition/PharmMedicineClass"/>
-   <name value="CDAR2.PharmMedicineClass"/>
-   <title value="PharmMedicineClass (CDA Pharm Class)"/>
+   <url value="http://hl7.org/fhir/cda/StructureDefinition/PharmMedication"/>
+   <name value="CDAR2.PharmMedication"/>
+   <title value="PharmMedication (CDA Pharm Class)"/>
    <status value="active"/>
    <experimental value="false"/>
    <publisher value="HL7"/>
    <kind value="logical"/>
    <abstract value="false"/>
-   <type value="PharmMedicineClass"/>
+   <type value="PharmMedication"/>
    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
    <derivation value="specialization"/>
    <differential>
-      <element id="PharmMedicineClass">
-         <path value="PharmMedicineClass"/>
+      <element id="PharmMedication">
+         <path value="PharmMedication"/>
       </element>
-      <element id="PharmMedicineClass.nullFlavor">
-         <path value="PharmMedicineClass.nullFlavor"/>
-         <representation value="xmlAttr"/>
-         <label value="Exceptional Value Detail"/>
-         <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
-         <min value="0"/>
-         <max value="1"/>
-         <type>
-            <code value="code"/>
-         </type>
-         <binding>
-            <strength value="required"/>
-            <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
-         </binding>
-      </element>
-      <element id="PharmMedicineClass.classCode">
-         <path value="PharmMedicineClass.classCode"/>
+      <element id="PharmMedication.classCode">
+         <path value="PharmMedication.classCode"/>
          <representation value="xmlAttr"/>
          <min value="1"/>
          <max value="1"/>
@@ -43,27 +28,14 @@
          </type>
          <binding>
             <strength value="required"/>
-            <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityClassManufacturedMaterial"/>
+            <valueSet value="http://terminology.hl7.org/ValueSet/v3-RoleClassAdministerableMaterial"/>
          </binding>
       </element>
-      <element id="PharmMedicineClass.determinerCode">
-         <path value="PharmMedicineClass.determinerCode"/>
-         <representation value="xmlAttr"/>
-         <min value="1"/>
-         <max value="1"/>
-         <type>
-            <code value="code"/>
-         </type>
-         <binding>
-            <strength value="required"/>
-            <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityDeterminer"/>
-         </binding>
-      </element>
-      <element id="PharmMedicineClass.realmCode">
+      <element id="PharmMedication.realmCode">
          <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
             <valueUri value="urn:ihe:pharm:medication"/>
          </extension>
-         <path value="PharmMedicineClass.realmCode"/>
+         <path value="PharmMedication.realmCode"/>
          <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
          <min value="0"/>
          <max value="*"/>
@@ -71,11 +43,11 @@
            <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
          </type>
       </element>
-      <element id="PharmMedicineClass.typeId">
+      <element id="PharmMedication.typeId">
          <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
             <valueUri value="urn:ihe:pharm:medication"/>
          </extension>
-         <path value="PharmMedicineClass.typeId"/>
+         <path value="PharmMedication.typeId"/>
          <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
          <min value="0"/>
          <max value="1"/>
@@ -84,11 +56,11 @@
            <code value="http://hl7.org/fhir/cda/StructureDefinition/InfrastructureRoot-typeId"/>
          </type>
       </element>
-      <element id="PharmMedicineClass.templateId">
+      <element id="PharmMedication.templateId">
          <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
             <valueUri value="urn:ihe:pharm:medication"/>
          </extension>
-         <path value="PharmMedicineClass.templateId"/>
+         <path value="PharmMedication.templateId"/>
          <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
          <min value="0"/>
          <max value="*"/>
@@ -96,48 +68,70 @@
            <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
          </type>
       </element>
-      <element id="PharmMedicineClass.code">
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-            <valueUri value="urn:ihe:pharm"/>
+      <element id="PharmMedication.administerableMedicine">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+            <valueUri value="urn:ihe:pharm:medication"/>
          </extension>
-         <path value="PharmMedicineClass.code"/>
+         <path value="PharmMedication.administerableMedicine"/>
          <min value="0"/>
          <max value="1"/>
          <type>
-            <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmMedicine"/>
          </type>
       </element>
-      <element id="PharmMedicineClass.name">
+      <element id="PharmMedication.subjectOf1">
          <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-            <valueUri value="urn:ihe:pharm"/>
+            <valueUri value="urn:ihe:pharm:medication"/>
          </extension>
-         <path value="PharmMedicineClass.name"/>
+         <path value="PharmMedication.subjectOf1"/>
          <min value="0"/>
          <max value="*"/>
          <type>
-            <code value="http://hl7.org/fhir/cda/StructureDefinition/TN"/>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmSubjectPolicy"/>
          </type>
       </element>
-      <element id="PharmMedicineClass.desc">
+      <element id="PharmMedication.subjectOf2">
          <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-            <valueUri value="urn:ihe:pharm"/>
+            <valueUri value="urn:ihe:pharm:medication"/>
          </extension>
-         <path value="PharmMedicineClass.desc"/>
+         <path value="PharmMedication.subjectOf2"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmSubjectApproval"/>
+         </type>
+      </element>
+      <element id="PharmMedication.subjectOf3">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+            <valueUri value="urn:ihe:pharm:medication"/>
+         </extension>
+         <path value="PharmMedication.subjectOf3"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmSubjectCharacteristic"/>
+         </type>
+      </element>
+      <element id="PharmMedication.subjectOf4">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+            <valueUri value="urn:ihe:pharm:medication"/>
+         </extension>
+         <path value="PharmMedication.subjectOf4"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmSubjectObservationGoal"/>
+         </type>
+      </element>
+      <element id="PharmMedication.subjectOf5">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+            <valueUri value="urn:ihe:pharm:medication"/>
+         </extension>
+         <path value="PharmMedication.subjectOf5"/>
          <min value="0"/>
          <max value="1"/>
          <type>
-            <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
-         </type>
-      </element>
-      <element id="PharmMedicineClass.formCode">
-         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-            <valueUri value="urn:ihe:pharm"/>
-         </extension>
-         <path value="PharmMedicineClass.formCode"/>
-         <min value="0"/>
-         <max value="1"/>
-         <type>
-            <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmSubjectValuedItem"/>
          </type>
       </element>
    </differential>

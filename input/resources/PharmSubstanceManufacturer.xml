@@ -1,25 +1,25 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-   <id value="PharmSuperContent"/>
+   <id value="PharmSubstanceManufacturer"/>
    <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
       <valueUri value="urn:ihe:pharm"/>
    </extension>
-   <url value="http://hl7.org/fhir/cda/StructureDefinition/PharmSuperContent"/>
-   <name value="CDAR2.PharmSuperContent"/>
-   <title value="PharmSuperContent (CDA Pharm Class)"/>
+   <url value="http://hl7.org/fhir/cda/StructureDefinition/PharmSubstanceManufacturer"/>
+   <name value="CDAR2.PharmSubstanceManufacturer"/>
+   <title value="PharmSubstanceManufacturer (CDA Pharm Class)"/>
    <status value="active"/>
    <experimental value="false"/>
    <publisher value="HL7"/>
    <kind value="logical"/>
    <abstract value="false"/>
-   <type value="PharmSuperContent"/>
+   <type value="PharmSubstanceManufacturer"/>
    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
    <derivation value="specialization"/>
    <differential>
-      <element id="PharmSuperContent">
-         <path value="PharmSuperContent"/>
+      <element id="PharmSubstanceManufacturer">
+         <path value="PharmSubstanceManufacturer"/>
       </element>
-      <element id="PharmSuperContent.nullFlavor">
-         <path value="PharmSuperContent.nullFlavor"/>
+      <element id="PharmSubstanceManufacturer.nullFlavor">
+         <path value="PharmSubstanceManufacturer.nullFlavor"/>
          <representation value="xmlAttr"/>
          <label value="Exceptional Value Detail"/>
          <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
@@ -33,8 +33,8 @@
            <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
          </binding>
        </element>
-       <element id="PharmSuperContent.classCode">
-         <path value="PharmSuperContent.classCode"/>
+       <element id="PharmSubstanceManufacturer.classCode">
+         <path value="PharmSubstanceManufacturer.classCode"/>
          <representation value="xmlAttr"/>
          <min value="1"/>
          <max value="1"/>
@@ -43,25 +43,25 @@
          </type>
          <binding>
            <strength value="required"/>
-           <valueSet value="http://terminology.hl7.org/ValueSet/v3-RoleClassContent"/>
+           <valueSet value="http://terminology.hl7.org/ValueSet/v3-RoleClassManufacturedProduct"/>
          </binding>
        </element>
-      <element id="PharmSuperContent.realmCode">
+      <element id="PharmSubstanceManufacturer.realmCode">
          <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
            <valueUri value="urn:ihe:pharm:medication"/>
         </extension>
-         <path value="PharmSuperContent.realmCode"/>
+         <path value="PharmSubstanceManufacturer.realmCode"/>
          <min value="0"/>
          <max value="*"/>
          <type>
            <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
          </type>
        </element>
-       <element id="PharmSuperContent.typeId">
+       <element id="PharmSubstanceManufacturer.typeId">
          <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
            <valueUri value="urn:ihe:pharm:medication"/>
         </extension>
-         <path value="PharmSuperContent.typeId"/>
+         <path value="PharmSubstanceManufacturer.typeId"/>
          <min value="0"/>
          <max value="1"/>
          <type>
@@ -69,11 +69,11 @@
            <code value="http://hl7.org/fhir/cda/StructureDefinition/InfrastructureRoot-typeId"/>
          </type>
        </element>
-       <element id="PharmSuperContent.templateId">
+       <element id="PharmSubstanceManufacturer.templateId">
          <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
            <valueUri value="urn:ihe:pharm:medication"/>
         </extension>
-         <path value="PharmSuperContent.templateId"/>
+         <path value="PharmSubstanceManufacturer.templateId"/>
          <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
          <min value="0"/>
          <max value="*"/>
@@ -81,26 +81,15 @@
            <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
          </type>
        </element>
-       <element id="PharmSuperContent.quantity">
-         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+      <element id="PharmSubstanceManufacturer.manufacturer">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
             <valueUri value="urn:ihe:pharm"/>
          </extension>
-         <path value="PharmSuperContent.quantity"/>
-         <min value="0"/>
-         <max value="1"/>
-         <type>
-            <code value="http://hl7.org/fhir/cda/StructureDefinition/RTO-QTY-QTY"/>
-         </type>
-      </element>
-     <element id="PharmSuperContent.containerPackagedMedicine">
-         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-            <valueUri value="urn:ihe:pharm"/>
-         </extension>
-         <path value="PharmSuperContent.containerPackagedMedicine"/>
+         <path value="PharmSubstanceManufacturer.manufacturer"/>
          <min value="1"/>
          <max value="1"/>
          <type>
-            <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmPackagedMedicine"/>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmManufacturer"/>
          </type>
       </element>
    </differential>

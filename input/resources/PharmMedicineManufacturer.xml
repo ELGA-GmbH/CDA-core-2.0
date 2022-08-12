@@ -1,5 +1,5 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-   <id value="PharmManufacturer"/>
+   <id value="PharmMedicineManufacturer"/>
    <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
       <valueUri value="urn:ihe:pharm:medication"/>
    </extension>

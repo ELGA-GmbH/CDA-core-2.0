@@ -146,213 +146,75 @@
         <code value="Element"/>
       </type>
     </element>
-    <element id="ManufacturedProduct.pharmSubjectOf1.nullFlavor">
-      <path value="ManufacturedProduct.pharmSubjectOf1.nullFlavor"/>
-      <representation value="xmlAttr"/>
-      <label value="Exceptional Value Detail"/>
-      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
-      </binding>
-    </element>
-    <element id="ManufacturedProduct.pharmSubjectOf1.typeCode">
-      <path value="ManufacturedProduct.pharmSubjectOf1.typeCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationTargetSubject"/>
-      </binding>
-    </element>
-    <!-- TODO pharm:InfrastructureRootElements -->
-    <element id="ManufacturedProduct.pharmSubjectOf1.pharmPolicy">
+    <element id="ManufacturedProduct.subjectOf1">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:ihe:pharm:medication"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
-        <valueString value="policy"/>
+        <valueString value="subjectOf1"/>
       </extension>
-      <path value="ManufacturedProduct.pharmSubjectOf1.pharmPolicy"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="Element"/>
-      </type>
-    </element>
-    <!-- TODO attributes-->
-    <!-- TODO pharm:InfrastructureRootElements -->
-    <element id="ManufacturedProduct.pharmSubjectOf1.pharmPolicy.pharmCode">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-        <valueUri value="urn:ihe:pharm:medication"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
-        <valueString value="code"/>
-      </extension>
-      <path value="ManufacturedProduct.pharmSubjectOf1.pharmPolicy.pharmCode"/>
+      <path value="ManufacturedProduct.subjectOf1"/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmSubjectPolicy"/>
       </type>
     </element>
-    <element id="ManufacturedProduct.pharmSubjectOf1.pharmPolicy.pharmText">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-        <valueUri value="urn:ihe:pharm:medication"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
-        <valueString value="text"/>
-      </extension>
-      <path value="ManufacturedProduct.pharmSubjectOf1.pharmPolicy.pharmText"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
-      </type>
-    </element>
-
-    <element id="ManufacturedProduct.pharmSubjectOf2">
+    <element id="ManufacturedProduct.subjectOf2">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:ihe:pharm:medication"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="subjectOf2"/>
       </extension>
-      <path value="ManufacturedProduct.pharmSubjectOf2"/>
+      <path value="ManufacturedProduct.subjectOf2"/>
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Element"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmSubjectApproval"/>
       </type>
     </element>
-    <element id="ManufacturedProduct.pharmSubjectOf1.nullFlavor">
-      <path value="ManufacturedProduct.pharmSubjectOf1.nullFlavor"/>
-      <representation value="xmlAttr"/>
-      <label value="Exceptional Value Detail"/>
-      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+    <element id="ManufacturedProduct.subjectOf3">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:ihe:pharm:medication"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="subjectOf3"/>
+      </extension>
+      <path value="ManufacturedProduct.subjectOf3"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmSubjectCharacteristic"/>
+      </type>
+    </element>
+    <element id="ManufacturedProduct.subjectOf4">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:ihe:pharm:medication"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="subjectOf4"/>
+      </extension>
+      <path value="ManufacturedProduct.subjectOf4"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmSubjectObservationGoal"/>
+      </type>
+    </element>
+    <element id="ManufacturedProduct.subjectOf5">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:ihe:pharm:medication"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="subjectOf5"/>
+      </extension>
+      <path value="ManufacturedProduct.subjectOf5"/>
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="code"/>
-      </type>
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
-      </binding>
-    </element>
-    <element id="ManufacturedProduct.pharmSubjectOf1.typeCode">
-      <path value="ManufacturedProduct.pharmSubjectOf1.typeCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationTargetSubject"/>
-      </binding>
-    </element>
-    <!-- TODO pharm:InfrastructureRootElements -->
-    <element id="ManufacturedProduct.pharmSubjectOf1.pharmApproval">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-        <valueUri value="urn:ihe:pharm:medication"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
-        <valueString value="approval"/>
-      </extension>
-      <path value="ManufacturedProduct.pharmSubjectOf1.pharmApproval"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="Element"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmSubjectValuedItem"/>
       </type>
     </element>
-    <!-- TODO attributes-->
-    <!-- TODO pharm:InfrastructureRootElements -->
-    <element id="ManufacturedProduct.pharmSubjectOf1.pharmApproval.pharmId">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-        <valueUri value="urn:ihe:pharm:medication"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
-        <valueString value="id"/>
-      </extension>
-      <path value="ManufacturedProduct.pharmSubjectOf1.pharmApproval.pharmCode"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
-      </type>
-    </element>
-    <element id="ManufacturedProduct.pharmSubjectOf1.pharmApproval.pharmCode">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-        <valueUri value="urn:ihe:pharm:medication"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
-        <valueString value="code"/>
-      </extension>
-      <path value="ManufacturedProduct.pharmSubjectOf1.pharmApproval.pharmCode"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
-      </type>
-    </element>
-    <element id="ManufacturedProduct.pharmSubjectOf1.pharmApproval.pharmStatusCode">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-        <valueUri value="urn:ihe:pharm:medication"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
-        <valueString value="statusCode"/>
-      </extension>
-      <path value="ManufacturedProduct.pharmSubjectOf1.pharmApproval.pharmStatusCode"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
-      </type>
-    </element>
-    <element id="ManufacturedProduct.pharmSubjectOf1.pharmApproval.pharmHolder">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-        <valueUri value="urn:ihe:pharm:medication"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
-        <valueString value="holder"/>
-      </extension>
-      <path value="ManufacturedProduct.pharmSubjectOf1.pharmApproval.pharmHolder"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="Element"/>
-      </type>
-    </element>
-    <!-- TODO pharm elements -->
-    <element id="ManufacturedProduct.pharmSubjectOf1.pharmApproval.pharmAuthor">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-        <valueUri value="urn:ihe:pharm:medication"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
-        <valueString value="author"/>
-      </extension>
-      <path value="ManufacturedProduct.pharmSubjectOf1.pharmApproval.pharmAuthor"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="Element"/>
-      </type>
-    </element>
-    <!-- TODO pharm elements -->
-    <!-- TODO pharm:subjectOf3 -->
-    <!-- TODO pharm:subjectOf4 -->
-    <!-- TODO pharm:subjectOf5 -->
   </differential>
 </StructureDefinition>

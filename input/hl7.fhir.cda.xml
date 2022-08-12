@@ -782,7 +782,52 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="StructureDefinition/PharmAgency" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmApproval" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmAuthor" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmCharacteristic" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmContent" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmCountry" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="StructureDefinition/PharmDistributedProduct" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmHolder" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmIngredient" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmManufacturedProduct" />
 			</reference>
 		</resource>
 		<resource>
@@ -792,7 +837,112 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="StructureDefinition/PharmMedication" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmMedicine" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmMedicineClass" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmMedicineManufacturer" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmObservationGoal" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmPackagedMedicine" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmPart" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmPolicy" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="StructureDefinition/PharmRelatedManufacturer" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmRole" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmSpecializedKind" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmSubContent" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmSubIngredient" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmSubjectApproval" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmSubjectCharacteristic" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmSubjectObservationGoal" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmSubjectPolicy" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmSubjectValuedItem" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmSubstance" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmSubstanceManufacturer" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmSuperContent" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmTerritorialAuthority" />
 			</reference>
 		</resource>
 		<page>

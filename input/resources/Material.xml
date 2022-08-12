@@ -227,9 +227,79 @@
       </extension>
       <path value="Material.asDistributedProduct"/>
       <min value="0"/>
-      <max value="1"/>
+      <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmDistributedProduct"/>
+      </type>
+    </element>
+    <element id="Material.asMedicineManufacturer">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:ihe:pharm:medication"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="asMedicineManufacturer"/>
+      </extension>
+      <path value="Material.asMedicineManufacturer"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmMedicineManufacturer"/>
+      </type>
+    </element>
+    <element id="Material.asContent">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:ihe:pharm:medication"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="asContent"/>
+      </extension>
+      <path value="Material.asContent"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmContent"/>
+      </type>
+    </element>
+    <element id="Material.asSpecializedKind">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:ihe:pharm:medication"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="asSpecializedKind"/>
+      </extension>
+      <path value="Material.asSpecializedKind"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmSpecializedKind"/>
+      </type>
+    </element>
+    <element id="Material.part">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:ihe:pharm:medication"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="part"/>
+      </extension>
+      <path value="Material.part"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmPart"/>
+      </type>
+    </element>
+    <element id="Material.ingredient">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:ihe:pharm:medication"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="ingredient"/>
+      </extension>
+      <path value="Material.ingredient"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmIngredient"/>
       </type>
     </element>
   </differential>

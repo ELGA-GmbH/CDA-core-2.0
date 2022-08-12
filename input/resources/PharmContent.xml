@@ -94,5 +94,27 @@
             <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmPackagedMedicine"/>
          </type>
       </element>
+      <element id="PharmContent.subjectOf1">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+            <valueUri value="urn:ihe:pharm:medication"/>
+         </extension>
+         <path value="PharmContent.subjectOf1"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmSubjectPolicy"/>
+         </type>
+      </element>
+      <element id="PharmContent.subjectOf2">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+            <valueUri value="urn:ihe:pharm:medication"/>
+         </extension>
+         <path value="PharmContent.subjectOf2"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmSubjectApproval"/>
+         </type>
+      </element>
    </differential>
 </StructureDefinition>

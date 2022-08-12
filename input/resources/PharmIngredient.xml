@@ -17,8 +17,21 @@
    <differential>
       <element id="PharmIngredient">
          <path value="PharmIngredient"/>
-         <min value="1"/>
+      </element>
+      <element id="PharmIngredient.nullFlavor">
+         <path value="PharmIngredient.nullFlavor"/>
+         <representation value="xmlAttr"/>
+         <label value="Exceptional Value Detail"/>
+         <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+         <min value="0"/>
          <max value="1"/>
+         <type>
+           <code value="code"/>
+         </type>
+         <binding>
+           <strength value="required"/>
+           <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
+         </binding>
       </element>
       <element id="PharmIngredient.classCode">
          <path value="PharmIngredient.classCode"/>
@@ -28,10 +41,56 @@
          <type>
             <code value="code"/>
          </type>
-         <defaultValueCode value="ACTI"/>
-         <fixedCode value="ACTI"/>
-         <mustSupport value="true"/>
+         <binding>
+            <strength value="required"/>
+            <valueSet value="http://terminology.hl7.org/ValueSet/v3-RoleClassIngredientEntity"/>
+          </binding>
       </element>
+      <element id="PharmIngredient.negationInd">
+         <path value="PharmIngredient.negationInd"/>
+         <representation value="xmlAttr"/>
+         <min value="0"/>
+         <max value="1"/>
+         <defaultValueCode value="false"/>
+         <type>
+           <code value="boolean"/>
+         </type>
+      </element>
+      <element id="PharmIngredient.realmCode">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+           <valueUri value="urn:ihe:pharm:medication"/>
+        </extension>
+         <path value="PharmIngredient.realmCode"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+           <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+         </type>
+       </element>
+       <element id="PharmIngredient.typeId">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+           <valueUri value="urn:ihe:pharm:medication"/>
+        </extension>
+         <path value="PharmIngredient.typeId"/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+           <!-- ELGA POCD_MT000040.InfrastructureRoot.typeId -->
+           <code value="http://hl7.org/fhir/cda/StructureDefinition/InfrastructureRoot-typeId"/>
+         </type>
+       </element>
+       <element id="PharmIngredient.templateId">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+           <valueUri value="urn:ihe:pharm:medication"/>
+        </extension>
+         <path value="PharmIngredient.templateId"/>
+         <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+           <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+         </type>
+       </element>
       <element id="PharmIngredient.quantity">
          <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
             <valueUri value="urn:ihe:pharm"/>
@@ -40,19 +99,19 @@
          <min value="0"/>
          <max value="1"/>
          <type>
-            <code value="http://hl7.org/fhir/cda/StructureDefinition/RTO_PQ_PQ"/>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/RTO-QTY-QTY"/>
          </type>
       </element>
          <element id="PharmIngredient.ingredient">
          <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
             <valueUri value="urn:ihe:pharm"/>
-         </extension>     
+         </extension>
          <path value="PharmIngredient.ingredient"/>
          <min value="0"/>
          <max value="1"/>
          <type>
             <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmSubstance"/>
          </type>
-      </element>      
+      </element>
    </differential>
 </StructureDefinition>
