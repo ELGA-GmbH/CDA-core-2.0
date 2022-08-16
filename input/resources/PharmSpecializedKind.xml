@@ -1,7 +1,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="PharmSpecializedKind"/>
    <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-      <valueUri value="urn:ihe:pharm"/>
+      <valueUri value="urn:ihe:pharm:medication"/>
    </extension>
    <url value="http://hl7.org/fhir/cda/StructureDefinition/PharmSpecializedKind"/>
    <name value="CDAR2.PharmSpecializedKind"/>
@@ -94,7 +94,7 @@
        </element>
      <element id="PharmSpecializedKind.generalizedMedicineClass">
          <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-            <valueUri value="urn:ihe:pharm"/>
+            <valueUri value="urn:ihe:pharm:medication"/>
          </extension>
          <path value="PharmSpecializedKind.generalizedMedicineClass"/>
          <min value="0"/>

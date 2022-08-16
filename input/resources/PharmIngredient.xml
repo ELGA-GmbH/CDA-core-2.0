@@ -1,7 +1,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="PharmIngredient"/>
    <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-      <valueUri value="urn:ihe:pharm"/>
+      <valueUri value="urn:ihe:pharm:medication"/>
    </extension>
    <url value="http://hl7.org/fhir/cda/StructureDefinition/PharmIngredient"/>
    <name value="CDAR2.PharmIngredient"/>
@@ -93,7 +93,7 @@
        </element>
       <element id="PharmIngredient.quantity">
          <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-            <valueUri value="urn:ihe:pharm"/>
+            <valueUri value="urn:ihe:pharm:medication"/>
          </extension>
          <path value="PharmIngredient.quantity"/>
          <min value="0"/>
@@ -104,7 +104,7 @@
       </element>
          <element id="PharmIngredient.ingredient">
          <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-            <valueUri value="urn:ihe:pharm"/>
+            <valueUri value="urn:ihe:pharm:medication"/>
          </extension>
          <path value="PharmIngredient.ingredient"/>
          <min value="0"/>

@@ -1,7 +1,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="PharmMedicineClass"/>
    <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-      <valueUri value="urn:ihe:pharm"/>
+      <valueUri value="urn:ihe:pharm:medication"/>
    </extension>
    <url value="http://hl7.org/fhir/cda/StructureDefinition/PharmMedicineClass"/>
    <name value="CDAR2.PharmMedicineClass"/>
@@ -98,7 +98,7 @@
       </element>
       <element id="PharmMedicineClass.code">
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-            <valueUri value="urn:ihe:pharm"/>
+            <valueUri value="urn:ihe:pharm:medication"/>
          </extension>
          <path value="PharmMedicineClass.code"/>
          <min value="0"/>
@@ -109,7 +109,7 @@
       </element>
       <element id="PharmMedicineClass.name">
          <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-            <valueUri value="urn:ihe:pharm"/>
+            <valueUri value="urn:ihe:pharm:medication"/>
          </extension>
          <path value="PharmMedicineClass.name"/>
          <min value="0"/>
@@ -120,7 +120,7 @@
       </element>
       <element id="PharmMedicineClass.desc">
          <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-            <valueUri value="urn:ihe:pharm"/>
+            <valueUri value="urn:ihe:pharm:medication"/>
          </extension>
          <path value="PharmMedicineClass.desc"/>
          <min value="0"/>
@@ -131,7 +131,7 @@
       </element>
       <element id="PharmMedicineClass.formCode">
          <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-            <valueUri value="urn:ihe:pharm"/>
+            <valueUri value="urn:ihe:pharm:medication"/>
          </extension>
          <path value="PharmMedicineClass.formCode"/>
          <min value="0"/>

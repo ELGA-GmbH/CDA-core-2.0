@@ -1,7 +1,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
    <id value="PharmSubstance"/>
    <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-      <valueUri value="urn:ihe:pharm"/>
+      <valueUri value="urn:ihe:pharm:medication"/>
    </extension>
    <url value="http://hl7.org/fhir/cda/StructureDefinition/PharmSubstance"/>
    <name value="CDAR2.PharmSubstance"/>
@@ -96,7 +96,7 @@
        </element>
       <element id="PharmSubstance.code">
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-            <valueUri value="urn:ihe:pharm"/>
+            <valueUri value="urn:ihe:pharm:medication"/>
          </extension>
          <path value="PharmSubstance.code"/>
          <min value="0"/>
@@ -107,7 +107,7 @@
       </element>
       <element id="PharmSubstance.name">
          <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-            <valueUri value="urn:ihe:pharm"/>
+            <valueUri value="urn:ihe:pharm:medication"/>
          </extension>
          <path value="PharmSubstance.name"/>
          <min value="0"/>
@@ -118,7 +118,7 @@
       </element>
       <element id="PharmSubstance.desc">
          <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-            <valueUri value="urn:ihe:pharm"/>
+            <valueUri value="urn:ihe:pharm:medication"/>
          </extension>
          <path value="PharmSubstance.desc"/>
          <min value="0"/>
@@ -129,7 +129,7 @@
       </element>
       <element id="PharmSubstance.lotNumberText">
          <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-            <valueUri value="urn:ihe:pharm"/>
+            <valueUri value="urn:ihe:pharm:medication"/>
          </extension>
          <path value="PharmSubstance.lotNumberText"/>
          <min value="0"/>
@@ -140,7 +140,7 @@
       </element>
       <element id="PharmSubstance.asSubstanceManufacturer">
          <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-            <valueUri value="urn:ihe:pharm"/>
+            <valueUri value="urn:ihe:pharm:medication"/>
          </extension>
          <path value="PharmSubstance.asSubstanceManufacturer"/>
          <min value="0"/>
@@ -151,7 +151,7 @@
       </element>
       <element id="PharmSubstance.subIngredient">
          <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-            <valueUri value="urn:ihe:pharm"/>
+            <valueUri value="urn:ihe:pharm:medication"/>
          </extension>
          <path value="PharmSubstance.subIngredient"/>
          <min value="0"/>
