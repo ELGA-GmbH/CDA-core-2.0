@@ -27,7 +27,7 @@
       <min value="2"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/SXCM_TS"/><!-- adjusted according to austrian schema -->
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/SXCM-TS"/><!-- adjusted according to austrian schema -->
       </type>
       <!-- <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"/>

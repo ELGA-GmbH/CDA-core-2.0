@@ -48,7 +48,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/SXCM_TS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/SXCM-TS"/>
       </type>
     </element>
     <element id="TEL.use">
