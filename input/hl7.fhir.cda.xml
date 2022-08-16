@@ -702,6 +702,11 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="StructureDefinition/RTO-QTY-QTY" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="StructureDefinition/SC" />
 			</reference>
 		</resource>
