@@ -18,6 +18,8 @@
   <differential>
     <element id="PharmTerritorialAuthority">
       <path value="PharmTerritorialAuthority"/>
+      <min value="1"/>
+      <max value="1"/>
     </element>
     <element id="PharmTerritorialAuthority.classCode">
       <path value="PharmTerritorialAuthority.classCode"/>

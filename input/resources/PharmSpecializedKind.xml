@@ -17,6 +17,8 @@
    <differential>
       <element id="PharmSpecializedKind">
          <path value="PharmSpecializedKind"/>
+         <min value="1"/>
+         <max value="1"/>
       </element>
       <element id="PharmSpecializedKind.nullFlavor">
          <path value="PharmSpecializedKind.nullFlavor"/>

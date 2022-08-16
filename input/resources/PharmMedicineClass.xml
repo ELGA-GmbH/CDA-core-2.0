@@ -17,6 +17,8 @@
    <differential>
       <element id="PharmMedicineClass">
          <path value="PharmMedicineClass"/>
+         <min value="1"/>
+         <max value="1"/>
       </element>
       <element id="PharmMedicineClass.nullFlavor">
          <path value="PharmMedicineClass.nullFlavor"/>
@@ -101,7 +103,7 @@
             <valueUri value="urn:ihe:pharm:medication"/>
          </extension>
          <path value="PharmMedicineClass.code"/>
-         <min value="0"/>
+         <min value="1"/>
          <max value="1"/>
          <type>
             <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>

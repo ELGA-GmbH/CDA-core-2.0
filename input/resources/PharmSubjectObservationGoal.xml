@@ -18,6 +18,8 @@
   <differential>
     <element id="PharmSubjectObservationGoal">
       <path value="PharmSubjectObservationGoal"/>
+      <min value="1"/>
+      <max value="1"/>
     </element>
     <element id="PharmSubjectObservationGoal.nullFlavor">
       <path value="PharmSubjectObservationGoal.nullFlavor"/>
