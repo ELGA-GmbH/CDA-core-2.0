@@ -86,6 +86,17 @@
            <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
          </type>
       </element>
+      <element id="PharmContent.quantity">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+            <valueUri value="urn:ihe:pharm:medication"/>
+         </extension>
+         <path value="PharmContent.quantity"/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/RTO-QTY-QTY"/>
+         </type>
+      </element>
       <element id="PharmContent.containerPackagedMedicine">
          <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
             <valueUri value="urn:ihe:pharm:medication"/>
