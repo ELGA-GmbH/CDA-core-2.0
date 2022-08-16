@@ -697,6 +697,11 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="StructureDefinition/RTO-MO-PQ" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="StructureDefinition/RTO-PQ-PQ" />
 			</reference>
 		</resource>
@@ -948,6 +953,11 @@
 		<resource>
 			<reference>
 				<reference value="StructureDefinition/PharmTerritorialAuthority" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/PharmValuedItem" />
 			</reference>
 		</resource>
 		<page>
