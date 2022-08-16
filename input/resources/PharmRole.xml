@@ -6,11 +6,10 @@
   </extension>
   <url value="http://hl7.org/fhir/cda/StructureDefinition/PharmRole"/>
   <name value="CDAR2.PharmRole"/>
-  <title value="PharmRole (CDA Class)"/>
+  <title value="PharmRole (CDA Pharm Class)"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7"/>
-  <description value="TODO"/>
   <kind value="logical"/>
   <abstract value="false"/>
   <type value="PharmRole"/>

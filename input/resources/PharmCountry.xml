@@ -6,11 +6,10 @@
   </extension>
   <url value="http://hl7.org/fhir/cda/StructureDefinition/PharmCountry"/>
   <name value="CDAR2.PharmCountry"/>
-  <title value="PharmCountry (CDA Class)"/>
+  <title value="PharmCountry (CDA Pharm Class)"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7"/>
-  <description value="TODO"/>
   <kind value="logical"/>
   <abstract value="false"/>
   <type value="PharmCountry"/>

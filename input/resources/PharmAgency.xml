@@ -6,11 +6,10 @@
   </extension>
   <url value="http://hl7.org/fhir/cda/StructureDefinition/PharmAgency"/>
   <name value="CDAR2.PharmAgency"/>
-  <title value="PharmAgency (CDA Class)"/>
+  <title value="PharmAgency (CDA Pharm Class)"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7"/>
-  <description value="TODO"/>
   <kind value="logical"/>
   <abstract value="false"/>
   <type value="PharmAgency"/>

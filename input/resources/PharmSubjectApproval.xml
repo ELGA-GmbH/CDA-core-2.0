@@ -6,11 +6,10 @@
   </extension>
   <url value="http://hl7.org/fhir/cda/StructureDefinition/PharmSubjectApproval"/>
   <name value="CDAR2.PharmSubjectApproval"/>
-  <title value="PharmSubjectApproval (CDA Class)"/>
+  <title value="PharmSubjectApproval (CDA Pharm Class)"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7"/>
-  <description value="TODO"/>
   <kind value="logical"/>
   <abstract value="false"/>
   <type value="PharmSubjectApproval"/>

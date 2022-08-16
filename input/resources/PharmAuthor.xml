@@ -6,11 +6,10 @@
   </extension>
   <url value="http://hl7.org/fhir/cda/StructureDefinition/PharmAuthor"/>
   <name value="CDAR2.PharmAuthor"/>
-  <title value="PharmAuthor (CDA Class)"/>
+  <title value="PharmAuthor (CDA Pharm Class)"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7"/>
-  <description value="TODO"/>
   <kind value="logical"/>
   <abstract value="false"/>
   <type value="PharmAuthor"/>

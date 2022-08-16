@@ -6,11 +6,10 @@
   </extension>
   <url value="http://hl7.org/fhir/cda/StructureDefinition/PharmSubIngredient"/>
   <name value="CDAR2.PharmSubIngredient"/>
-  <title value="PharmSubIngredient (CDA Class)"/>
+  <title value="PharmSubIngredient (CDA Pharm Class)"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7"/>
-  <description value="TODO"/>
   <kind value="logical"/>
   <abstract value="false"/>
   <type value="PharmSubIngredient"/>
