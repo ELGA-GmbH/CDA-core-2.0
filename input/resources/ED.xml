@@ -29,18 +29,41 @@
       <min value="1"/>
       <max value="*"/>
     </element>
-    <!-- in the austian schema there is no element charset, nowhere even once -->
-    <!-- <element id="ED.charset">
-      <path value="ED.charset"/>
+    <element id="ED.representation">
+      <path value="ED.representation"/>
       <representation value="xmlAttr"/>
-      <label value="Charset"/>
-      <definition value="For character-based encoding types, this property specifies the character set and character encoding used. The charset shall be identified by an Internet Assigned Numbers Authority (IANA) Charset Registration [] in accordance with RFC 2978 []."/>
+      <label value="Representation"/>
+      <definition value="Specifies the representation of the binary data that is the content of the binary data value."/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
       </type>
-    </element> -->
+      <defaultValueCode value="TXT"/>
+    </element>
+    <element id="ED.mediaType">
+      <path value="ED.mediaType"/>
+      <representation value="xmlAttr"/>
+      <label value="Media Type"/>
+      <definition value="Identifies the type of the encapsulated data and identifies a method to interpret or render the data."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="text/plain"/>
+    </element>
+    <element id="ED.language">
+      <path value="ED.language"/>
+      <representation value="xmlAttr"/>
+      <label value="Language"/>
+      <definition value="For character based information the language property specifies the human language of the text."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
     <element id="ED.compression">
       <path value="ED.compression"/>
       <representation value="xmlAttr"/>
@@ -81,37 +104,7 @@
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-IntegrityCheckAlgorithm"/>
       </binding>
-    </element>
-    <element id="ED.language">
-      <path value="ED.language"/>
-      <representation value="xmlAttr"/>
-      <label value="Language"/>
-      <definition value="For character based information the language property specifies the human language of the text."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-    </element>
-    <element id="ED.mediaType">
-      <path value="ED.mediaType"/>
-      <representation value="xmlAttr"/>
-      <label value="Media Type"/>
-      <definition value="Identifies the type of the encapsulated data and identifies a method to interpret or render the data."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-    </element>
-    <element id="ED.representation">
-      <path value="ED.representation"/>
-      <representation value="xmlAttr"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
+      <defaultValueCode value="SHA-1"/>
     </element>
     <element id="ED.data[x]">
       <path value="ED.data[x]"/>
@@ -143,7 +136,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/thumbnail"/>
       </type>
     </element>
   </differential>

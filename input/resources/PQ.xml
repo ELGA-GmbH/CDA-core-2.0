@@ -29,27 +29,6 @@
       <min value="1"/>
       <max value="*"/>
     </element>
-    <element id="PQ.inclusive"><!-- not known in austrian schema -->
-      <path value="PQ.inclusive"/>
-      <representation value="xmlAttr"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="boolean"/>
-      </type>
-    </element>
-    <element id="PQ.unit"> <!-- the default should be 1, cant be stated in a ressource -->
-      <path value="PQ.unit"/>
-      <representation value="xmlAttr"/>
-      <label value="Unit of Measure"/>
-      <definition value="The unit of measure specified in the Unified Code for Units of Measure (UCUM) []."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <defaultValueCode value="1"/>
-    </element>
     <element id="PQ.value">
       <path value="PQ.value"/>
       <representation value="xmlAttr"/>
@@ -60,6 +39,18 @@
       <type>
         <code value="decimal"/>
       </type>
+    </element>
+    <element id="PQ.unit">
+      <path value="PQ.unit"/>
+      <representation value="xmlAttr"/>
+      <label value="Unit of Measure"/>
+      <definition value="The unit of measure specified in the Unified Code for Units of Measure (UCUM) [http://aurora.rg.iupui.edu/UCUM]."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="1"/>
     </element>
     <element id="PQ.translation">
       <path value="PQ.translation"/>

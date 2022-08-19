@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="thumbnail"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>A thumbnail is an abbreviated rendition of the full data. A thumbnail requires significantly fewer resources than the full data, while still maintaining some distinctive similarity with the full data. A thumbnail is typically used with by-reference encapsulated data. It allows a user to select data more efficiently before actually downloading through the reference.</p>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+    <valueUri value="urn:hl7-org:v3"/>
+  </extension>
+  <url value="http://hl7.org/fhir/cda/StructureDefinition/thumbnail"/>
+  <name value="thumbnail"/>
+  <title value="thumbnail (V3 Data Type)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7"/>
+  <description value="A thumbnail is an abbreviated rendition of the full data. A thumbnail requires significantly fewer resources than the full data, while still maintaining some distinctive similarity with the full data. A thumbnail is typically used with by-reference encapsulated data. It allows a user to select data more efficiently before actually downloading through the reference."/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="ED"/>
+  <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="ED">
+      <path value="ED"/>
+      <definition value="A thumbnail is an abbreviated rendition of the full data. A thumbnail requires significantly fewer resources than the full data, while still maintaining some distinctive similarity with the full data. A thumbnail is typically used with by-reference encapsulated data. It allows a user to select data more efficiently before actually downloading through the reference."/>
+      <min value="1"/>
+      <max value="*"/>
+    </element>
+    <element id="ED.thumbnail">
+      <path value="ED.thumbnail"/>
+      <label value="Thumbnail"/>
+      <definition value="An abbreviated rendition of the full data. A thumbnail requires significantly fewer resources than the full data, while still maintaining some distinctive similarity with the full data. A thumbnail is typically used with by-reference encapsulated data. It allows a user to select data more efficiently before actually downloading through the reference."/>
+      <min value="0"/>
+      <max value="0"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

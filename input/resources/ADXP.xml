@@ -32,7 +32,7 @@
     <element id="ADXP.partType">
       <path value="ADXP.partType"/>
       <representation value="xmlAttr"/>
-      <definition value="Specifies the type of the address part"/>
+      <definition value="Specifies whether an address part names the street, city, country, postal code, post box, etc. If the type is NULL the address part is unclassified and would simply appear on an address label as is."/>
       <min value="0"/>
       <max value="1"/>
       <type>

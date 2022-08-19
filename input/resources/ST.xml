@@ -58,7 +58,7 @@
       <representation value="xmlAttr"/>
       <label value="Media Type"/>
       <definition value="Identifies the type of the encapsulated data and identifies a method to interpret or render the data."/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
@@ -68,15 +68,15 @@
     <element id="ED.representation">
       <path value="ED.representation"/>
       <representation value="xmlAttr"/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
       </type>
       <fixedCode value="TXT"/>
     </element>
-    <element id="ED.data[x]">
-      <path value="ED.data[x]"/>
+    <element id="ED.data">
+      <path value="ED.data"/>
       <representation value="xmlText"/>
       <definition value="The string value"/>
       <min value="0"/>

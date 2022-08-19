@@ -72,14 +72,5 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="CS.originalText">
-      <path value="CS.originalText"/>
-      <label value="Original Text"/>
-      <min value="0"/>
-      <max value="0"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
-      </type>
-    </element>
   </differential>
 </StructureDefinition>

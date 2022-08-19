@@ -29,26 +29,6 @@
       <min value="1"/>
       <max value="*"/>
     </element>
-    <element id="PIVL_TS.phase">
-      <path value="PIVL_TS.phase"/>
-      <label value="Phase"/>
-      <definition value="A prototype of the repeating interval, specifying the duration of each occurrence and anchors the periodic interval sequence at a certain point in time."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"/>
-      </type>
-    </element>
-    <element id="PIVL_TS.period">
-      <path value="PIVL_TS.period"/>
-      <label value="Period"/>
-      <definition value="A time duration specifying as a reciprocal measure of the frequency at which the periodic interval repeats."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
-      </type>
-    </element>
     <element id="PIVL_TS.alignment">
       <path value="PIVL_TS.alignment"/>
       <representation value="xmlAttr"/>
@@ -69,6 +49,27 @@
       <max value="1"/>
       <type>
         <code value="boolean"/>
+      </type>
+      <defaultValueBoolean value="false"/>
+    </element>
+    <element id="PIVL_TS.phase">
+      <path value="PIVL_TS.phase"/>
+      <label value="Phase"/>
+      <definition value="A prototype of the repeating interval, specifying the duration of each occurrence and anchors the periodic interval sequence at a certain point in time."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"/>
+      </type>
+    </element>
+    <element id="PIVL_TS.period">
+      <path value="PIVL_TS.period"/>
+      <label value="Period"/>
+      <definition value="A time duration specifying as a reciprocal measure of the frequency at which the periodic interval repeats."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
       </type>
     </element>
   </differential>

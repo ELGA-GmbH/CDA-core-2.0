@@ -22,15 +22,18 @@
       <min value="1"/>
       <max value="*"/>
     </element>
-    <element id="IVL_PQ.operator"><!-- added from motherclass SCXM_PQ, default value "I" cant be specified in ressource -->
+    <!-- added from super class SXCM_PQ -->
+    <element id="IVL_PQ.operator">
       <path value="IVL_PQ.operator"/>
       <representation value="xmlAttr"/>
       <label value="Operator"/>
+      <definition value="A code specifying whether the set component is included (union) or excluded (set-difference) from the set, or other set operations with the current set component and the set as constructed from the representation stream up to the current point."/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
       </type>
+      <defaultValueCode value="I"/>
     </element>
     <element id="IVL_PQ.low">
       <path value="IVL_PQ.low"/>
@@ -39,7 +42,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVXB-PQ"/>
       </type>
     </element>
     <element id="IVL_PQ.high">
@@ -49,7 +52,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVXB-PQ"/>
       </type>
     </element>
     <element id="IVL_PQ.width">
@@ -63,16 +66,6 @@
       </type>
     </element>
     <element id="IVL_PQ.center">
-      <path value="IVL_PQ.center"/>
-      <label value="Central Value"/>
-      <definition value="The arithmetic mean of the interval (low plus high divided by 2). The purpose of distinguishing the center as a semantic property is for conversions of intervals from and to point values."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
-      </type>
-    </element>
-    <element id="IVL_PQ.center"><!-- added from motherclass QTY -->
       <path value="IVL_PQ.center"/>
       <label value="Central Value"/>
       <definition value="The arithmetic mean of the interval (low plus high divided by 2). The purpose of distinguishing the center as a semantic property is for conversions of intervals from and to point values."/>

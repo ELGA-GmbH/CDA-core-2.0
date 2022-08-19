@@ -37,17 +37,6 @@
         <max value="*"/>
       </base>
     </element>
-    <element id="AD.isNotOrdered">
-      <path value="AD.isNotOrdered"/>
-      <representation value="xmlAttr"/>
-      <label value="Is Not Ordered"/>
-      <definition value="A boolean value specifying whether the order of the address parts is known or not. While the address parts are always a Sequence, the order in which they are presented may or may not be known. Where this matters, the isNotOrdered property can be used to convey this information."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="boolean"/>
-      </type>
-    </element>
     <element id="AD.use">
       <path value="AD.use"/>
       <representation value="xmlAttr"/>
@@ -57,6 +46,17 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+      </type>
+    </element>
+    <element id="AD.isNotOrdered">
+      <path value="AD.isNotOrdered"/>
+      <representation value="xmlAttr"/>
+      <label value="Is Not Ordered"/>
+      <definition value="A boolean value specifying whether the order of the address parts is known or not. While the address parts are always a Sequence, the order in which they are presented may or may not be known. Where this matters, the isNotOrdered property can be used to convey this information."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
       </type>
     </element>
     <element id="AD.delimiter">

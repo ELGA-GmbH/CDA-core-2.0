@@ -33,6 +33,7 @@
       <path value="SC.code"/>
       <representation value="xmlAttr"/>
       <label value="Code"/>
+      <definition value="The plain code symbol defined by the code system. For example, &quot;784.0&quot; is the code symbol of the ICD-9 code &quot;784.0&quot; for headache."/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -43,6 +44,7 @@
       <path value="SC.codeSystem"/>
       <representation value="xmlAttr"/>
       <label value="Code System"/>
+      <definition value="Specifies the code system that defines the code."/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -53,6 +55,7 @@
       <path value="SC.codeSystemName"/>
       <representation value="xmlAttr"/>
       <label value="Code System Name"/>
+      <definition value="A common name of the coding system."/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -63,6 +66,7 @@
       <path value="SC.codeSystemVersion"/>
       <representation value="xmlAttr"/>
       <label value="Code System Version"/>
+      <definition value="If applicable, a version descriptor defined specifically for the given code system."/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -73,6 +77,7 @@
       <path value="SC.displayName"/>
       <representation value="xmlAttr"/>
       <label value="Display Name"/>
+      <definition value="A name or title for the code, under which the sending system shows the code value to its users."/>
       <min value="0"/>
       <max value="1"/>
       <type>

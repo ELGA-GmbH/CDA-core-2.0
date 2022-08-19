@@ -29,28 +29,6 @@
       <min value="1"/>
       <max value="*"/>
     </element>
-    <element id="II.assigningAuthorityName">
-      <path value="II.assigningAuthorityName"/>
-      <representation value="xmlAttr"/>
-      <label value="Assigning Authority Name"/>
-      <definition value="A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="string"/>
-      </type>
-    </element>
-    <element id="II.displayable">
-      <path value="II.displayable"/>
-      <representation value="xmlAttr"/>
-      <label value="Displayable"/>
-      <definition value="Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false)."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="boolean"/>
-      </type>
-    </element>
     <element id="II.root">
       <path value="II.root"/>
       <representation value="xmlAttr"/>
@@ -71,6 +49,28 @@
       <max value="1"/>
       <type>
         <code value="string"/>
+      </type>
+    </element>
+    <element id="II.assigningAuthorityName">
+      <path value="II.assigningAuthorityName"/>
+      <representation value="xmlAttr"/>
+      <label value="Assigning Authority Name"/>
+      <definition value="A human readable name or mnemonic for the assigning authority. The Assigning Authority Name has no computational value. The purpose of a Assigning Authority Name is to assist an unaided human interpreter of an II value to interpret the authority. Note: no automated processing must depend on the assigning authority name to be present in any form."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="II.displayable">
+      <path value="II.displayable"/>
+      <representation value="xmlAttr"/>
+      <label value="Displayable"/>
+      <definition value="Specifies if the identifier is intended for human display and data entry (displayable = true) as opposed to pure machine interoperation (displayable = false)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
       </type>
     </element>
   </differential>

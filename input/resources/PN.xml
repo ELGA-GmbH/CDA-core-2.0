@@ -32,7 +32,8 @@
       <min value="1"/>
       <max value="*"/>
     </element>
-    <element id="PN.use"><!-- is not specified in the austrian schema, but narrowing down to this value set makes sense -->
+    <!-- use is originally specified in EN. Narrowing down to this value set makes sense. -->
+    <element id="PN.use">
       <path value="PN.use"/>
       <binding>
         <strength value="required"/>

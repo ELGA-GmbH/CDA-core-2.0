@@ -27,20 +27,8 @@
       <min value="2"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/SXCM-TS"/><!-- adjusted according to austrian schema -->
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/SXCM-TS"/>
       </type>
-      <!-- <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"/>
-      </type>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/EIVL-TS"/>
-      </type>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/PIVL-TS"/>
-      </type>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/SXPR-TS"/>
-      </type> -->
     </element>
   </differential>
 </StructureDefinition>

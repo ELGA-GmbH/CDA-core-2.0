@@ -487,6 +487,21 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="StructureDefinition/IVXB-INT" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/IVXB-PQ" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/IVXB-TS" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="StructureDefinition/LabeledDrug" />
 			</reference>
 		</resource>
@@ -778,6 +793,11 @@
 		<resource>
 			<reference>
 				<reference value="StructureDefinition/TEL" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/thumbnail" />
 			</reference>
 		</resource>
 		<resource>

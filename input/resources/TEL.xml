@@ -57,7 +57,7 @@
       <label value="Use Code"/>
       <definition value="One or more codes advising a system or user which telecommunication address in a set of like addresses to select for a given telecommunication need."/>
       <min value="0"/>
-      <max value="*"/>
+      <max value="1"/>
       <type>
         <code value="code"/>
       </type>

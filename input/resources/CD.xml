@@ -149,5 +149,6 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
       </type>
     </element>
+    <!-- TODO IPS.designation -->
   </differential>
 </StructureDefinition>
