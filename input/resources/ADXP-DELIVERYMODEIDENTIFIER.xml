@@ -21,7 +21,7 @@
   <abstract value="false"/>
   <type value="ADXP"/>
   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/ADXP"/>
-  <derivation value="specialization"/>
+  <derivation value="constraint"/>
   <differential>
     <element id="ADXP">
       <path value="ADXP"/>
