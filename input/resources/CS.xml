@@ -72,5 +72,28 @@
         <code value="string"/>
       </type>
     </element>
+    <element id="CS.originalText">
+      <path value="CS.originalText"/>
+      <label value="Original Text"/>
+      <min value="0"/>
+      <max value="0"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+      </type>
+    </element>
+    <element id="CS.designation">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:ips"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="designation"/>
+      </extension>
+      <path value="CS.designation"/>
+      <min value="0"/>
+      <max value="0"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
+      </type>
+    </element>
   </differential>
 </StructureDefinition>
