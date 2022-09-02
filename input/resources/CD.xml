@@ -149,6 +149,19 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
       </type>
     </element>
-    <!-- TODO IPS.designation -->
+    <element id="CD.designation">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:ips"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="designation"/>
+      </extension>
+      <path value="CD.designation"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
+      </type>
+    </element>
   </differential>
 </StructureDefinition>
