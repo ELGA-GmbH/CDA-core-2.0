@@ -29,6 +29,28 @@
       <min value="1"/>
       <max value="*"/>
     </element>
+    <element id="ED.representation">
+      <path value="ED.representation"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <fixedCode value="TXT"/>
+    </element>
+    <element id="ED.mediaType">
+      <path value="ED.mediaType"/>
+      <representation value="xmlAttr"/>
+      <label value="Media Type"/>
+      <definition value="Identifies the type of the encapsulated data and identifies a method to interpret or render the data."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <fixedCode value="text/plain"/>
+    </element>
     <element id="ED.compression">
       <path value="ED.compression"/>
       <representation value="xmlAttr"/>
@@ -52,28 +74,6 @@
       <definition value="Specifies the algorithm used to compute the integrityCheck value. The cryptographically strong checksum algorithm Secure Hash Algorithm-1 (SHA-1) is currently the industry standard. It has superseded the MD5 algorithm only a couple of years ago, when certain flaws in the security of MD5 were discovered. Currently the SHA-1 hash algorithm is the default choice for the integrity check algorithm. Note that SHA-256 is also entering widespread usage."/>
       <min value="0"/>
       <max value="0"/>
-    </element>
-    <element id="ED.mediaType">
-      <path value="ED.mediaType"/>
-      <representation value="xmlAttr"/>
-      <label value="Media Type"/>
-      <definition value="Identifies the type of the encapsulated data and identifies a method to interpret or render the data."/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="text/plain"/>
-    </element>
-    <element id="ED.representation">
-      <path value="ED.representation"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="TXT"/>
     </element>
     <element id="ED.data">
       <path value="ED.data"/>
