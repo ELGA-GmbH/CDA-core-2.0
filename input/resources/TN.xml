@@ -22,12 +22,12 @@
   <description value="A restriction of entity name that is effectively a simple string used for a simple name for things and places."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="TN"/>
+  <type value="EN"/>
   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
-  <derivation value="specialization"/>
+  <derivation value="constraint"/>
   <differential>
-    <element id="TN">
-      <path value="TN"/>
+    <element id="EN">
+      <path value="EN"/>
       <definition value="A restriction of entity name that is effectively a simple string used for a simple name for things and places."/>
       <min value="1"/>
       <max value="*"/>
@@ -41,6 +41,31 @@
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"/>
       </type>
+    </element>
+    <element id="EN.delimiter">
+      <path value="EN.delimiter"/>
+      <min value="0"/>
+      <max value="0"/>
+    </element>
+    <element id="EN.family">
+      <path value="EN.family"/>
+      <min value="0"/>
+      <max value="0"/>
+    </element>
+    <element id="EN.given">
+      <path value="EN.given"/>
+      <min value="0"/>
+      <max value="0"/>
+    </element>
+    <element id="EN.prefix">
+      <path value="EN.prefix"/>
+      <min value="0"/>
+      <max value="0"/>
+    </element>
+    <element id="EN.suffix">
+      <path value="EN.suffix"/>
+      <min value="0"/>
+      <max value="0"/>
     </element>
   </differential>
 </StructureDefinition>

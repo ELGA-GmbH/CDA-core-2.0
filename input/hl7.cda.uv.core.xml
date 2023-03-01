@@ -1,14 +1,25 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-	<id value="hl7.fhir.cda"/>
-	<url value="http://hl7.org/fhir/cda/ImplementationGuide/cda-ig"/>
-	<version value="2.1.0" />
+	<id value="hl7.cda.uv.core"/>
+	<url value="http://hl7.org/cda/stds/core/ImplementationGuide/hl7.cda.uv.core"/>
+	<version value="2.1.0-draft1" />
 	<name value="ClinicalDocumentArchitectureV201" />
 	<title value="Clinical Document Architecture V2.0.1" />
 	<status value="active"/>
 	<experimental value="false"/>
 	<publisher value="Health Level 7"/>
-	<packageId value="hl7.fhir.cda" />
-	<fhirVersion value="4.0.1" />
+  <contact>
+    <name value="HL7 International - Cross-Group Projects"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/cgp"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="cgp@lists.HL7.org"/>
+    </telecom>
+  </contact>
+	<packageId value="hl7.cda.uv.core" />
+	<fhirVersion value="5.0.0-snapshot3" />
 	<definition>
 		<resource>
 			<reference>
@@ -981,22 +992,38 @@
 			</reference>
 		</resource>
 		<page>
-			<nameUrl value="index.html"/>
+			<sourceUrl value="index.html"/>
+			<name value="index.html"/>
 			<title value="IG Home Page"/>
 			<generation value="markdown"/>
 			<page>
-				<nameUrl value="downloads.html"/>
+				<sourceUrl value="downloads.html"/>
+				<name value="downloads.html"/>
 				<title value="Downloads"/>
 				<generation value="markdown"/>
 			</page>
 		</page>
 		<parameter>
-			<code value="releaselabel" />
-			<value value="CI Build" />
+			<code>
+			  <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+			  <code value="releaselabel" />
+			</code>
+			<value value="1st Draft" />
 		</parameter>
 		<parameter>
-			<code value="copyrightyear" />
+			<code>
+			  <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+  			<code value="copyrightyear" />
+			</code>
 			<value value="2019+" />
 		</parameter>
+		<parameter>
+			<code>
+			  <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+  			<code value="apply-version" />
+			</code>
+			<value value="true" />
+		</parameter>
+		
 	</definition>
 </ImplementationGuide>
